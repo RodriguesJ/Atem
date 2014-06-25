@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MQPythonClass.xsl"?>
+<doc>
+ <class>MQFace</class>
+ <message lang="en">MQFace has an information of the face in the object.</message>
+ <message lang="ja">オブジェクト中の一つの面の情報を保持します。</message>
+ <properties>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type>long</type>
+   <name>id</name>
+   <message lang="en">unique ID</message>
+   <message lang="ja">面を識別するユニークID</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type>int</type>
+   <name>numVertex</name>
+   <message lang="en">number of vertices</message>
+   <message lang="ja">頂点数</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type template="list">int</type>
+   <name>index</name>
+   <message lang="en">list of indices of vertices</message>
+   <message lang="ja">頂点インデックスのリスト</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type template="list">MQCoordinate</type>
+   <name>coord</name>
+   <message lang="en">list of UV coordinates</message>
+   <message lang="ja">UV座標のリスト</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type template="list">MQColor</type>
+   <name>color</name>
+   <message lang="en">list of vertex colors</message>
+   <message lang="ja">頂点カラーのリスト</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type template="list">float</type>
+   <name>alpha</name>
+   <message lang="en">list of vertex alpha colors</message>
+   <message lang="ja">頂点カラーの不透明度のリスト</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>material</name>
+   <message lang="en">index of the material</message>
+   <message lang="ja">マテリアルのインデックス</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>select</name>
+   <message lang="en">state of the selection</message>
+   <message lang="ja">選択状態</message>
+   <values>
+    <value value="0">
+     <message lang="en">not selected</message>
+     <message lang="ja">選択されていない</message>
+    </value>
+    <value value="1">
+     <message lang="en">selected</message>
+     <message lang="ja">選択されている</message>
+    </value>
+   </values>
+  </property>
+ </properties>
+ <methods>
+  <method>
+   <name>getCoord</name>
+   <message lang="en">Get a UV coordinate of the vertex.</message>
+   <message lang="ja">UV座標を取得します。</message>
+   <args>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the vertex</message>
+     <message lang="ja">面内の頂点番号</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQCoordinate</type>
+    <message lang="en">coordinate</message>
+    <message lang="ja">UV座標</message>
+   </return>
+  </method>
+  <method>
+   <name>setCoord</name>
+   <message lang="en">Set a UV coordinate of the vertex.</message>
+   <message lang="ja">UV座標を設定します。</message>
+   <args>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the vertex</message>
+     <message lang="ja">面内の頂点番号</message>
+    </arg>
+    <arg>
+     <name>coord</name>
+     <type>MQCoordinate</type>
+     <message lang="en">coordinate</message>
+     <message lang="ja">UV座標</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>getColor</name>
+   <message lang="en">Get a color of the vertex.</message>
+   <message lang="ja">頂点カラーを取得します。</message>
+   <args>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the vertex</message>
+     <message lang="ja">面内の頂点番号</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQColor</type>
+    <message lang="en">vertex color</message>
+    <message lang="ja">頂点カラー</message>
+   </return>
+  </method>
+  <method>
+   <name>setColor</name>
+   <message lang="en">Set a vertex color of the vertex.</message>
+   <message lang="ja">頂点カラーを設定します。</message>
+   <args>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the vertex</message>
+     <message lang="ja">面内の頂点番号</message>
+    </arg>
+    <arg>
+     <name>color</name>
+     <type>MQColor</type>
+     <message lang="en">vertex color</message>
+     <message lang="ja">頂点カラー</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>getAlpha</name>
+   <message lang="en">Get an alpha value of the vertex.</message>
+   <message lang="ja">頂点カラーのα値を取得します。</message>
+   <args>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the vertex</message>
+     <message lang="ja">面内の頂点番号</message>
+    </arg>
+   </args>
+   <return>
+    <type>float</type>
+    <message lang="en">alpha value</message>
+    <message lang="ja">頂点カラーのα値 [0:1]</message>
+   </return>
+  </method>
+  <method>
+   <name>setAlpha</name>
+   <message lang="en">Set an alpha value of the vertex.</message>
+   <message lang="ja">頂点カラーのα値を設定します。</message>
+   <args>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the vertex</message>
+     <message lang="ja">面内の頂点番号</message>
+    </arg>
+    <arg>
+     <name>alpha</name>
+     <type>float</type>
+     <message lang="en">alpha value</message>
+     <message lang="ja">頂点カラーのα値 [0:1]</message>
+    </arg>
+   </args>
+  </method>
+ </methods>
+</doc>

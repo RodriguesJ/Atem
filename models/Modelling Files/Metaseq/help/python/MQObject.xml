@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MQPythonClass.xsl"?>
+<doc>
+ <class>MQObject</class>
+ <message lang="en">MQObject contains vertices and faces.</message>
+ <message lang="ja">頂点と面からなるオブジェクト情報を管理します。</message>
+ <properties>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>string</type>
+   <name>name</name>
+   <message lang="en">object's name</message>
+   <message lang="ja">オブジェクト名</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type>long</type>
+   <name>id</name>
+   <message lang="en">unique ID of object</message>
+   <message lang="ja">オブジェクトを識別するユニークID</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type>int</type>
+   <name>numVertex</name>
+   <message lang="en">number of vertices</message>
+   <message lang="ja">頂点数</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type>int</type>
+   <name>numFace</name>
+   <message lang="en">number of faces</message>
+   <message lang="ja">面数</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type template="list">MQVertex</type>
+   <name>vertex</name>
+   <message lang="en">list of vertices</message>
+   <message lang="ja">頂点のリスト</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type template="list">MQFace</type>
+   <name>face</name>
+   <message lang="en">list of faces</message>
+   <message lang="ja">面のリスト</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>visible</name>
+   <message lang="en">visibility of the object</message>
+   <message lang="ja">オブジェクトの表示・非表示</message>
+   <values>
+    <value value="0">
+     <message lang="en">Hidden</message>
+     <message lang="ja">非表示</message>
+    </value>
+    <value value="1">
+     <message lang="en">Visible</message>
+     <message lang="ja">表示</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>lock</name>
+   <message lang="en">locking of the object</message>
+   <message lang="ja">オブジェクトの固定</message>
+   <values>
+    <value value="0">
+     <message lang="en">Disable</message>
+     <message lang="ja">無効</message>
+    </value>
+    <value value="1">
+     <message lang="en">Locked</message>
+     <message lang="ja">固定</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>MQColor</type>
+   <name>color</name>
+   <message lang="en">color of vertices and lines</message>
+   <message lang="ja">頂点・辺の表示色</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>colorValid</name>
+   <message lang="en">validation of 'color' property</message>
+   <message lang="ja">colorの値が有効かどうか</message>
+   <values>
+    <value value="0">
+     <message lang="en">Invalid</message>
+     <message lang="ja">無効</message>
+    </value>
+    <value value="1">
+     <message lang="en">Valid</message>
+     <message lang="ja">有効</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>shading</name>
+   <message lang="en">enable smooth shading</message>
+   <message lang="ja">シェーディングの種類</message>
+   <values>
+    <value value="0">
+     <message lang="en">Flat shading</message>
+     <message lang="ja">フラットシェーディング</message>
+    </value>
+    <value value="1">
+     <message lang="en">Smooth shading</message>
+     <message lang="ja">スムースシェーディング</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>smoothAngle</name>
+   <message lang="en">smoothing angle</message>
+   <message lang="ja">スムージング角度 [0:180]</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>patchType</name>
+   <message lang="en">type of the patch</message>
+   <message lang="ja">曲面タイプ</message>
+   <values>
+    <value value="0">
+     <message lang="en">None</message>
+     <message lang="ja">なし</message>
+    </value>
+    <value value="1">
+     <message lang="en">Spline Type 1</message>
+     <message lang="ja">スプライン曲面タイプ1</message>
+    </value>
+    <value value="2">
+     <message lang="en">Spline Type 2</message>
+     <message lang="ja">スプライン曲面タイプ2</message>
+    </value>
+    <value value="3">
+     <message lang="en">Catmull-Clark</message>
+     <message lang="ja">Catmull-Clark曲面</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>patchSegment</name>
+   <message lang="en">segment of the patch</message>
+   <message lang="ja">曲面分割数</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>mirrorType</name>
+   <message lang="en">type of mirroring</message>
+   <message lang="ja">鏡面のタイプ</message>
+   <values>
+    <value value="0">
+     <message lang="en">None</message>
+     <message lang="ja">なし</message>
+    </value>
+    <value value="1">
+     <message lang="en">separated at center</message>
+     <message lang="ja">中心で分離した鏡面</message>
+    </value>
+    <value value="2">
+     <message lang="en">joined by center</message>
+     <message lang="ja">中心をつなぐ鏡面</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>mirrorAxisX</name>
+   <message lang="en">Apply mirroring at X axis</message>
+   <message lang="ja">X軸で鏡像生成</message>
+   <values>
+    <value value="0">
+     <message lang="en">None</message>
+     <message lang="ja">なし</message>
+    </value>
+    <value value="1">
+     <message lang="en">Enable</message>
+     <message lang="ja">有効</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>mirrorAxisY</name>
+   <message lang="en">Apply mirroring at Y axis</message>
+   <message lang="ja">Y軸で鏡像生成</message>
+   <values>
+    <value value="0">
+     <message lang="en">None</message>
+     <message lang="ja">なし</message>
+    </value>
+    <value value="1">
+     <message lang="en">Enable</message>
+     <message lang="ja">有効</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>mirrorAxisZ</name>
+   <message lang="en">Apply mirroring at Z axis</message>
+   <message lang="ja">Z軸で鏡像生成</message>
+   <values>
+    <value value="0">
+     <message lang="en">None</message>
+     <message lang="ja">なし</message>
+    </value>
+    <value value="1">
+     <message lang="en">Enable</message>
+     <message lang="ja">有効</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>mirrorAxisLocal</name>
+   <message lang="en">Apply mirroring by the local coordinate</message>
+   <message lang="ja">ローカル軸に対する鏡像生成</message>
+   <values>
+    <value value="0">
+     <message lang="en">Global coordinate</message>
+     <message lang="ja">グローバル座標</message>
+    </value>
+    <value value="1">
+     <message lang="en">Local coordinate</message>
+     <message lang="ja">ローカル座標</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>mirrorDistance</name>
+   <message lang="en">Maximum joined distance of mirroring.</message>
+   <message lang="ja">中心をつなぐ鏡像生成の適用距離</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type>int</type>
+   <name>depth</name>
+   <message lang="en">depth of the hierarchy</message>
+   <message lang="ja">階層の深さ（ルート直下の場合0）</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>folding</name>
+   <message lang="en">folding of the hierarchy</message>
+   <message lang="ja">階層の折りたたみ表示</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>MQPoint</type>
+   <name>scaling</name>
+   <message lang="en">scaling factor of the local coordinate</message>
+   <message lang="ja">ローカル座標の拡大率</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>MQAngle</type>
+   <name>rotation</name>
+   <message lang="en">rotation angle of the local coordinate</message>
+   <message lang="ja">ローカル座標の回転角</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>MQPoint</type>
+   <name>translation</name>
+   <message lang="en">translation of the local coordinate</message>
+   <message lang="ja">ローカル座標の位置</message>
+  </property>
+ </properties>
+ <methods>
+  <method>
+   <name>addVertex</name>
+   <message lang="en">Add a vertex.</message>
+   <message lang="ja">頂点を追加します。</message>
+   <args>
+    <arg>
+     <name>point</name>
+     <type>MQPoint</type>
+     <message lang="en">position of a new vertex</message>
+     <message lang="ja">頂点の位置</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>addVertex</name>
+   <message lang="en">Add a vertex.</message>
+   <message lang="ja">頂点を追加します。</message>
+   <args>
+    <arg>
+     <name>x</name>
+     <type>float</type>
+     <message lang="en">X coordinate of a new vertex</message>
+     <message lang="ja">X座標</message>
+    </arg>
+    <arg>
+     <name>y</name>
+     <type>float</type>
+     <message lang="en">Y coordinate of a new vertex</message>
+     <message lang="ja">Y座標</message>
+    </arg>
+    <arg>
+     <name>z</name>
+     <type>float</type>
+     <message lang="en">Z coordinate of a new vertex</message>
+     <message lang="ja">Z座標</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>deleteVertex</name>
+   <message lang="en">Delete a vertex.</message>
+   <message lang="ja">指定した頂点を削除します。</message>
+   <args>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the deleting vertex</message>
+     <message lang="ja">削除する頂点のインデックス</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>addFace</name>
+   <message lang="en">Add a face.</message>
+   <message lang="ja">指定した頂点を取り囲む面を追加します。</message>
+   <args>
+    <arg>
+     <name>list</name>
+     <type>list&lt;int&gt;</type>
+     <message lang="en">list of the indices of the vertices</message>
+     <message lang="ja">頂点インデックスのリスト</message>
+    </arg>
+   </args>
+   <example lang="ja">
+    <p>次の例ではMQObject型のobjに平面を追加します。</p>
+    <pre>
+v = []
+v.append( obj.addVertex(0,0,0) )
+v.append( obj.addVertex(100,0,0) )
+v.append( obj.addVertex(100,100,0) )
+v.append( obj.addVertex(0,100,0) )
+obj.addFace(v)<br />
+    </pre>
+   </example>
+  </method>
+  <method>
+   <name>deleteFace</name>
+   <message lang="en">Delete a face.</message>
+   <message lang="ja">指定した面を削除します。</message>
+   <args>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the deleting face</message>
+     <message lang="ja">削除する面のインデックス</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>getVertexIndexFromUniqueID</name>
+   <message lang="en">Get the index of vertex from unique ID.</message>
+   <message lang="ja">ユニークIDから頂点のインデックスを取得します。</message>
+   <args>
+    <arg>
+     <name>id</name>
+     <type>long</type>
+     <message lang="en">unique ID of vertex</message>
+     <message lang="ja">頂点のユニークID</message>
+    </arg>
+   </args>
+   <return>
+    <type>int</type>
+    <message lang="en">index of vertex</message>
+    <message lang="ja">頂点のインデックス</message>
+    <values>
+     <value value="-1">
+      <message lang="en">failed</message>
+      <message lang="ja">取得失敗</message>
+     </value>
+    </values>
+   </return>
+  </method>
+  <method>
+   <name>getFaceIndexFromUniqueID</name>
+   <message lang="en">Get the index of face from unique ID.</message>
+   <message lang="ja">ユニークIDから面のインデックスを取得します。</message>
+   <args>
+    <arg>
+     <name>id</name>
+     <type>long</type>
+     <message lang="en">unique ID of face</message>
+     <message lang="ja">面のユニークID</message>
+    </arg>
+   </args>
+   <return>
+    <type>int</type>
+    <message lang="en">index of face</message>
+    <message lang="ja">面のインデックス</message>
+    <values>
+     <value value="-1">
+      <message lang="en">failed</message>
+      <message lang="ja">取得失敗</message>
+     </value>
+    </values>
+   </return>
+  </method>
+ </methods>
+</doc>

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MQPythonClass.xsl"?>
+<doc>
+ <class>MQScene</class>
+ <message lang="en">MQScene manages a camera and so on.</message>
+ <message lang="ja">カメラを含むシーン情報を管理します。</message>
+ <properties>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>head</name>
+   <message lang="en">head angle</message>
+   <message lang="ja">ヘッド角</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>pitch</name>
+   <message lang="en">pitch angle</message>
+   <message lang="ja">ピッチ角</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>bank</name>
+   <message lang="en">bank angle</message>
+   <message lang="ja">バンク角</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>fov</name>
+   <message lang="en">field of view</message>
+   <message lang="ja">視野角 [0:90]</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type>int</type>
+   <name>ortho</name>
+   <message lang="en">ortho</message>
+   <message lang="ja">平行投影かどうか</message>
+   <values>
+    <value value="0">
+     <message lang="en">perspective view</message>
+     <message lang="ja">透視投影</message>
+    </value>
+    <value value="1">
+     <message lang="en">ortho view</message>
+     <message lang="ja">平行投影</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>MQPoint</type>
+   <name>globalDirectionalLight</name>
+   <message lang="en">direction of light</message>
+   <message lang="ja">光源の方向</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>MQColor</type>
+   <name>globalAmbientColor</name>
+   <message lang="en">color of global ambient</message>
+   <message lang="ja">シーン全体の環境光の色</message>
+  </property>
+ </properties>
+ <methods>
+  <method>
+   <name>getCameraPos</name>
+   <message lang="en">Get a position of the camera.</message>
+   <message lang="ja">カメラの位置を取得します。</message>
+   <return>
+    <type>MQPoint</type>
+    <message lang="en">position of the camera</message>
+    <message lang="ja">カメラの位置</message>
+   </return>
+  </method>
+  <method>
+   <name>setCameraPos</name>
+   <message lang="en">Set a position of the camera.</message>
+   <message lang="ja">カメラの位置を設定します。</message>
+   <args>
+    <arg>
+     <name>pos</name>
+     <type>MQPoint</type>
+     <message lang="en">position of the camera</message>
+     <message lang="ja">カメラの位置</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>getCameraAngle</name>
+   <message lang="en">Get an angle of the camera.</message>
+   <message lang="ja">カメラの向きを取得します。</message>
+   <return>
+    <type>MQAngle</type>
+    <message lang="en">angle of the camera</message>
+    <message lang="ja">カメラの向き</message>
+   </return>
+  </method>
+  <method>
+   <name>setCameraAngle</name>
+   <message lang="en">Set an angle of the camera.</message>
+   <message lang="ja">カメラの向きを設定します。カメラの位置は変更されません。</message>
+   <args>
+    <arg>
+     <name>angle</name>
+     <type>MQAngle</type>
+     <message lang="en">angle of the camera</message>
+     <message lang="ja">カメラの向き</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>getLookAtPos</name>
+   <message lang="en">Get a position that the camera looks at.</message>
+   <message lang="ja">カメラの注視点を取得します。</message>
+   <return>
+    <type>MQPoint</type>
+    <message lang="en">position of looking at</message>
+    <message lang="ja">注視点</message>
+   </return>
+  </method>
+  <method>
+   <name>setLookAtPos</name>
+   <message lang="en">Set a position that the camera looks at.</message>
+   <message lang="ja">カメラの注視点を指定します。回転中心も注視点に変更されます。</message>
+   <args>
+    <arg>
+     <name>pos</name>
+     <type>MQPoint</type>
+     <message lang="en">position of looking at</message>
+     <message lang="ja">注視点</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>getRotationCenter</name>
+   <message lang="en">Get a position of the rotation center of the camera.</message>
+   <message lang="ja">カメラの回転中心を取得します。</message>
+   <return>
+    <type>MQPoint</type>
+    <message lang="en">rotation center</message>
+    <message lang="ja">回転中心</message>
+   </return>
+  </method>
+  <method>
+   <name>setRotationCenter</name>
+   <message lang="en">Set a position of the rotation center of the camera.</message>
+   <message lang="ja">カメラの回転中心を設定します。</message>
+   <args>
+    <arg>
+     <name>center</name>
+     <type>MQPoint</type>
+     <message lang="en">rotation center</message>
+     <message lang="ja">カメラの向き</message>
+    </arg>
+   </args>
+  </method>
+ </methods>
+</doc>

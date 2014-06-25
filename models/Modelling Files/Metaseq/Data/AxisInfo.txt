@@ -1,0 +1,20 @@
+"3D Atelier",right,up,front
+"3D Studio",right,back,up
+"Animation Master",left,back,up
+"Blender",left,front,up
+"Bryce",left,back,up
+"Cinema4D",right,up,back
+"Direct3D",right,up,back
+"DoGA CGA System",front,right,up
+"LightWave3D",right,up,back
+"Maya",right,up,front
+"PlayStation",right,down,back
+"POV-Ray",right,up,back
+"RayDream",front,right,up
+"Rhinoceros",right,back,up
+"trueSpace",left,front,up
+"Shade",left,back,up
+"SoftF/X",left,back,up
+"Softimage|XSI",right,up,front
+"VRML",right,front,up
+"˜ZŠp‘å‰¤",left,down,back

@@ -1,0 +1,29 @@
+package com.runescape.revised.server.configuration;
+
+import com.runescape.revised.server.configuration.impl.MainServerConfiguration;
+import com.runescape.revised.server.configuration.impl.world.impl.FifthWorldServerConfiguration;
+import com.runescape.revised.server.configuration.impl.world.impl.FourthWorldServerConfiguration;
+import com.runescape.revised.server.configuration.impl.world.impl.SecondWorldServerConfiguration;
+import com.runescape.revised.server.configuration.impl.world.impl.ThirdWorldServerConfiguration;
+
+public class ServerConfigurationParser {
+
+	private ServerConfiguration[] serverConfigurations;
+
+	public ServerConfigurationParser() {
+		this.setServerConfigurations(new ServerConfiguration[5]);
+		this.getServerConfigurations()[0] = new MainServerConfiguration();
+		this.getServerConfigurations()[1] = new SecondWorldServerConfiguration();
+		this.getServerConfigurations()[2] = new ThirdWorldServerConfiguration();
+		this.getServerConfigurations()[3] = new FourthWorldServerConfiguration();
+		this.getServerConfigurations()[4] = new FifthWorldServerConfiguration();
+	}
+
+	public void setServerConfigurations(final ServerConfiguration[] serverConfigurations) {
+		this.serverConfigurations = serverConfigurations;
+	}
+
+	public ServerConfiguration[] getServerConfigurations() {
+		return this.serverConfigurations;
+	}
+}

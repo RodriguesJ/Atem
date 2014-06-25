@@ -1,0 +1,7 @@
+1. CLick on teleport icon.
+2. Walking stops.
+3. Animation occurs.
+4. Graphic occurs.
+5. Teleport to different location.
+6. Map region changes.
+7. Done.

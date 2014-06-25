@@ -1,0 +1,77 @@
+1. Send a packet from the server to the client.
+2. Produce (write) a packet (add it to the BlockingQueue).
+3. Consume (read) a packet (remove it from the BlockingQueue).
+
+Producer - 1 Thread?
+	Read - 1 Thread?
+	Write - 1 Thread?
+Consumer - 1 Thread?
+	Read - 1 Thread?
+	Write - 1 Thread?
+Implement concurrency?
+
+Problems:
+1. Order of packets.
+2. Synchronization/lock issues.
+
+1. Create a ThreadPool with core amount of Threads.
+2. WriteThread implements Runnable.
+3. ReadThread implements Runnable.
+4. Submit the write and read threads into the ThreadPool.
+5. Implement the Producer-Consumer design pattern.
+6. ThreadPool for read AND write packets.
+
+1. Create a ThreadPool with core amount of Threads.
+2. Let all packets implement the Runnable class (as well as extend the Packet
+class).
+3. Take out the executePacket(GamePlayer) method and add in a Player instance
+into the AbstractPacket class.
+4. Add in the run method.
+5. Use a while loop to loop through 
+5. Submit packets into the ThreadPool.
+
+ServerPacket
+	ConcurrentMap<Integer, ServerPacket> serverPacketMap = new ConcurrentHashMap<Integer, ServerPacket>();
+ClientPacket
+	ConcurrentMap<Integer, ClientPacket> clientPacketMap = new ConcurrentHashMap,Integer, ClientPacket>();
+
+public class LoginPacket extends Packet implements Runnable {
+
+	@Override
+	public short getLength() {
+	
+	}
+
+	@Override
+	public byte getOpcode() {
+	
+	}
+
+	@Override
+	public void run() {
+		this.getPlayer().doSomething();
+	}
+}
+
+public class WriteThread implements Runnable {
+
+	public WriteThread() {
+		
+	}
+}
+
+public class ReadThread implements Runnable {
+
+	public ReadThread() {
+		
+	}
+}
+
+public class PacketSystem() {
+
+	public PacketSystem() {
+		ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+		executorService.submit(new WriteThread());
+		executorService.submit(new ReadThread());
+	}
+}

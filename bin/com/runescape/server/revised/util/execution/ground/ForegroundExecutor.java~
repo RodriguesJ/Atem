@@ -1,0 +1,56 @@
+package com.runescape.revised.util.execution.ground;
+
+import java.util.Queue;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import com.runescape.revised.system.AbstractGameSystem;
+import com.runescape.revised.system.event.AbstractEvent;
+import com.runescape.revised.system.event.EventDispatcher;
+
+public class ForegroundExecutor {
+
+	private Queue<AbstractGameSystem> systemQueue;
+	private Queue<AbstractGameSystem> pendingSystemQueue;
+	private ExecutorService executionService;
+
+	public ForegroundExecutor() {
+		this.setExecutionService(Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors()));
+	}
+
+	public void submitForegroundTask(final AbstractGameSystem gameSystem) {
+		this.getExecutionService().submit(new Callable<Object>() {
+			@Override
+			public Object call() {
+				final AbstractEvent event = gameSystem.executeEvent();
+				EventDispatcher.dispatchEvent(null, event);
+				return null;
+			}
+		});
+	}
+
+	public void setSystemQueue(final Queue<AbstractGameSystem> systemQueue) {
+		this.systemQueue = systemQueue;
+	}
+
+	public Queue<AbstractGameSystem> getSystemQueue() {
+		return this.systemQueue;
+	}
+
+	public void setPendingSystemQueue(final Queue<AbstractGameSystem> pendingSystemQueue) {
+		this.pendingSystemQueue = pendingSystemQueue;
+	}
+
+	public Queue<AbstractGameSystem> getPendingSystemQueue() {
+		return this.pendingSystemQueue;
+	}
+
+	public void setExecutionService(final ExecutorService executionService) {
+		this.executionService = executionService;
+	}
+
+	public ExecutorService getExecutionService() {
+		return this.executionService;
+	}
+}

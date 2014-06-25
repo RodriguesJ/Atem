@@ -1,0 +1,12 @@
+package com.runescape.revised.thread;
+
+import com.runescape.revised.system.AbstractGameSystem;
+import com.runescape.revised.system.event.AbstractEvent;
+
+public class ThreadSystem extends AbstractGameSystem {
+
+	@Override
+	public AbstractEvent executeEvent() {
+		return null;
+	}
+}

@@ -1,0 +1,134 @@
+IconFile "SmallIcon.bmp"
+
+PanelCommand	0 0 120
+
+GroupSystem	4 * 113 107 Alias
+PanelFile	2 16 17 33
+BtnOpen	20 16 46 17 GradBtn
+BtnSave	65 16 46 17 GradBtn
+BtnSaveAs	20 32 46 17 GradBtn
+BtnInsert	65 32 46 17 GradBtn
+BtnConfig	2 52 55 17 GradBtn
+BtnDocInfo	56 52 55 17 GradBtn
+BtnObjectPanel	2 72 55 17 GradBtn
+BtnObjectProperty	56 72 55 17 GradBtn
+BtnMaterialPanel	2 88 55 17 GradBtn
+BtnMaterialProperty	56 88 55 17 GradBtn
+
+GroupEdit	4 * 113 143 Alias
+BtnUndo	2 16 55 17 GradBtn
+BtnRedo	56 16 55 17 GradBtn
+BtnSelectAll	2 36 55 17 GradBtn
+BtnUnselectAll	56 36 55 17 GradBtn
+BtnSelectCurObj 2 52 55 17 GradBtn
+BtnSelectCurMat	56 52 55 17 GradBtn
+BtnHideFace	2 72 55 17 GradBtn
+BtnShowFace	56 72 55 17 GradBtn
+BtnFix	2 88 55 17 GradBtn
+BtnUnfix	56 88 55 17 GradBtn
+TextStore	2 108 38 16
+BtnStore1	42 108 18 17 GradBtn
+BtnStore2	59 108 18 17 GradBtn
+BtnStore3	76 108 18 17 GradBtn
+BtnStore4	93 108 18 17 GradBtn
+TextRestore	2 124 38 17
+BtnRestore1	42 124 18 17 GradBtn
+BtnRestore2	59 124 18 17 GradBtn
+BtnRestore3	76 124 18 17 GradBtn
+BtnRestore4	93 124 18 17 GradBtn
+
+GroupCommand	4 * 113 211 Alias
+PanelEdit	* * * * Invisible
+BtnComSelect	2 16 27 23 Icon(0 0 25 21)
+BtnComRect	29 16 27 23 Icon(25 0 25 21)
+BtnComRope	56 16 27 23 Icon(50 0 25 21)
+BtnComMove	2 39 27 23 Icon(75 0 25 21)
+BtnComScale	29 39 27 23 Icon(100 0 25 21)
+BtnComRotate	56 39 27 23 Icon(125 0 25 21)
+BtnComLocalEdit	83 114 27 23 Icon(125 63 25 21)
+BtnComUVEdit	83 16 27 46 Icon(0 84 25 44)
+BtnComMapping	83 65 27 46 Icon(25 84 25 44)
+PanelFace	* * * * Invisible
+BtnComPrimitive	2 65 27 23 Icon(0 21 25 21)
+BtnComCreate	29 65 27 23 Icon(25 21 25 21)
+BtnComDeleteFace	56 65 27 23 Icon(50 21 25 21)
+BtnComInvert	2 88 27 23 Icon(75 21 25 21)
+BtnComExtrude	29 88 27 23 Icon(100 21 25 21)
+BtnComMaterial	56 88 27 23 Icon(125 21 25 21)
+PanelLine	* * * * Invisible
+BtnComPullFace	2 114 27 23 Icon(0 42 25 21)
+BtnComBevel	29 114 27 23 Icon(25 42 25 21)
+BtnComMagnet	56 114 27 23 Icon(100 63 25 21)
+BtnComTwist	2 137 27 23 Icon(0 63 25 21)
+BtnComBend	29 137 27 23 Icon(25 63 25 21)
+BtnComShear	56 137 27 23 Icon(50 63 25 21)
+BtnComLattice	83 137 27 23 Icon(75 63 25 21)
+BtnComWire	2 160 27 23 Icon(50 42 25 21)
+BtnComKnife	29 160 27 23 Icon(75 42 25 21)
+BtnComWeit	56 160 27 23 Icon(100 42 25 21)
+BtnComVertexColor 83 160 27 23 Icon(125 42 25 21)
+PanelMisc	* * * * Invisible
+BtnComBlob	2 186 27 23 Icon(50 84 25 21)
+BtnComMapPaint	29 186 27 23 Icon(75 84 25 21)
+BtnComBackImage	56 186 27 23 Icon(100 84 25 21)
+BtnComView	83 186 27 23 Icon(125 84 25 21)
+
+GroupOption	4 * 113 95 Alias
+BtnSnapX	2 16 19 17 GradBtn
+BtnSnapY	24 16 19 17 GradBtn
+BtnSnapZ	46 16 19 17 GradBtn
+BtnSnapLocal	2 36 19 17 GradBtn
+BtnSnapWorld	24 36 19 17 GradBtn
+BtnSnapScreen	46 36 19 17 GradBtn
+BtnEditPoint	2 56 19 17 GradBtn
+BtnEditLine	24 56 19 17 GradBtn
+BtnEditFace	46 56 19 17 GradBtn
+BtnEditRect	69 16 19 17 GradBtn
+BtnEditRope	90 16 19 17 GradBtn
+BtnEditCurObj	2 76 36 17 GradBtn
+BtnEditGrid	38 76 37 17 GradBtn
+BtnEditSymmetry	75 76 36 17 GradBtn
+
+GroupView	4 * 113 74 Alias
+PanelPers	2 16 17 35
+BtnPersView	20 16 91 17 GradBtn
+BtnMeshYZ	20 35 24 17 GradBtn
+BtnMeshZX	44 35 24 17 GradBtn
+BtnMeshXY	68 35 24 17 GradBtn
+BtnAxis	94 35 17 17 GradBtn
+PanelThree	2 55 17 17
+Btn3View	20 55 53 17 GradBtn
+BtnMesh3	75 55 35 17 GradBtn
+
+GroupLight	4 * 113 * Alias
+PaintLight	8 * * *
+CheckBackLight	40 * * *
+
+BtnPersPoint	* * * * GradBtn
+BtnPersLine	* * * * GradBtn
+BtnPersFace	* * * * GradBtn
+BtnPersSimple	* * * * GradBtn
+BtnPersFront	* * * * GradBtn
+BtnPersImage	* * * * GradBtn
+
+BtnTopPoint	* * * * GradBtn
+BtnTopLine	* * * * GradBtn
+BtnTopFace	* * * * GradBtn
+BtnTopSimple	* * * * GradBtn
+BtnTopFront	* * * * GradBtn
+BtnTopImage	* * * * GradBtn
+
+BtnFrontPoint	* * * * GradBtn
+BtnFrontLine	* * * * GradBtn
+BtnFrontFace	* * * * GradBtn
+BtnFrontSimple	* * * * GradBtn
+BtnFrontFront	* * * * GradBtn
+BtnFrontImage	* * * * GradBtn
+
+BtnLeftPoint	* * * * GradBtn
+BtnLeftLine	* * * * GradBtn
+BtnLeftFace	* * * * GradBtn
+BtnLeftSimple	* * * * GradBtn
+BtnLeftFront	* * * * GradBtn
+BtnLeftImage	* * * * GradBtn
+

@@ -1,0 +1,5 @@
+~Generaly everything to do with modeling~
+http://www.moparscape.org/smf/index.php/topic,363483.0.html
+
+~Animating~
+http://www.rune-server.org/runescape-development/rs2-client/tutorials/156613-tutorial-adding-animation-cape-models-based-skillcapes.html

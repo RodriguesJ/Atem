@@ -1,0 +1,69 @@
+Effect {
+	DlgEffect	"Effect"
+	BtnOk	"OK"
+	BtnCancel	"Cancel"
+
+	ListEffect	"Brighten" "Invert Tone" "Mirror" "Fractal" "Ripple" "Rotate" "Wave" "Whirl" "Mozaic" "Diffuse" "Compose" "Motion Blur" "Blur" "Blur Little" "Sharp Little" "Max Brightness" "Min Brightness" "Emboss" "Noise" "Edge"
+	GroupSample	"Sample"
+	LabelOriginal	"Before"
+	LabelEffect	"After"
+	ColorPanel	"Hue angle" "Saturation" "Value" "Red" "Green" "Blue"
+
+	GroupBrighten	"Brighten"
+	LabelBrighten	"Value"
+
+	GroupMirror	"Mirror"
+	CheckMirrorX	"X"
+	CheckMirrorY	"Y"
+
+	GroupCloud	"Fractal"
+	LabelCloudAlpha	"Density"
+
+	GroupRipple	"Ripple"
+	LabelRippleLen	"Wavelen."
+	LabelRippleAmp	"Amp."
+	LabelRipplePhase	"Phase"
+
+	GroupRotate	"Rotate"
+	LabelRotateAngle	"Angle"
+
+	GroupWave	"Wave"
+	LabelWaveLen	"Wavelen."
+	LabelWaveAmp	"Amp."
+	LabelWavePhase	"Phase"
+	LabelWaveAngle	"Angle"
+
+	GroupWhirl	"Whirl"
+	LabelWhirlAngle	"Angle"
+
+	GroupMozaic	"Mozaic"
+	LabelMozaicPixel	"Pixel"
+
+	GroupDiffuse	"Diffuse"
+	LabelDiffuse	"Value"
+
+	GroupCompose	"Compose"
+	RadioComposeTile	"Tile"
+	RadioComposeResize	"Resize"
+	LabelComposeValue	"Value"
+	BtnComposeFile	"Load"
+	
+	GroupMBlur	"Motion Blur"
+	LabelMBlurSpeed	"Speed"
+	LabelMBlurAngle	"Angle"
+
+	GroupBrightMaxMin	"Brightness"
+	LabelBrightMMPixel	"Pixel"
+
+	GroupEmboss	"Emboss"
+	LabelEmbossPower	"Power"
+	LabelEmbossPixel	"Pixel"
+	LabelEmbossAngle	"Angle"
+
+	GroupNoise	"Noise"
+	LabelNoisePower	"Power"
+
+	GroupBlur	"Blur"
+	LabelBlurPixel	"Pixel"
+	CheckWhirlClockwise	"Clockwise"
+}

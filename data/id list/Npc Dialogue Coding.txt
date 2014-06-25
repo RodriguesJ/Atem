@@ -1,0 +1,29 @@
+			sendFrame200(4901, 591);
+			sendFrame126(GetNpcName(NpcTalkTo), 4902);
+			sendFrame126("HEY WHATS UP ADD YOUR TEXT HERE", 4903);
+			sendFrame126("MORE TEXT HERE", 4904);
+            			sendFrame126("MORE TEXT HERE", 4905);
+            			sendFrame126("MORE TEXT HERE", 4906);
+            			sendFrame75(NpcTalkTo, 4901);
+           			sendFrame164(4900);
+            			NpcDialogueSend = true;
+
+.
+
+			sendFrame200(4894, 591);
+            			sendFrame126(GetNpcName(NpcTalkTo), 4895);
+            			sendFrame126("HEY WHATS UP ADD YOUR TEXT HERE", 4896);
+            			sendFrame126("MORE TEXT HERE", 4897);
+            			sendFrame126("MORE TEXT HERE", 4898);
+            			sendFrame75(NpcTalkTo, 4894);
+            			sendFrame164(4893);
+            			NpcDialogueSend = true;//Four Line
+
+
+			sendFrame200(4888, 591);
+			sendFrame126(GetNpcName(NpcTalkTo), 4889);
+			sendFrame126("HEY WHATS UP ADD YOUR TEXT HERE", 4890);
+			sendFrame126("MORE TEXT HERE", 4891);
+            			sendFrame75(NpcTalkTo, 4888);
+            			sendFrame164(4887);
+            			NpcDialogueSend = true;//Tree Line

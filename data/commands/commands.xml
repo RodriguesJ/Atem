@@ -1,0 +1,10 @@
+<<PACKET>
+	<COMMAND NAME = "disconnect" RANK_ID = "3" CLASS_NAME = "com.client.game.model.entity.player.commands.impl.DisconnectCommandHandler">
+	</COMMAND>
+	<COMMAND NAME = "lag" RANK_ID = "3" CLASS_NAME = "com.client.game.model.entity.player.commands.impl.LagCommandHandler">
+<	</COMMAND>
+ 	<COMMAND NAME = "fps" RANK_ID = "3" CLASS_NAME = "com.client.game.model.entity.player.commands.impl.FPSCommandHandler">
+ 	</COMMAND>
+ 	<COMMAND NAME = "noclip" RANK_ID = "3" CLASS_NAME = "com.client.game.model.entity.player.commands.impl.DisconnectCommandHandler">
+ 	</COMMAND>
+<</PACKET>

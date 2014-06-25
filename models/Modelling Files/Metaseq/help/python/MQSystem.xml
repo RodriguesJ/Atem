@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MQPythonClass.xsl"?>
+<doc>
+ <class>MQSystem</class>
+ <methods>
+  <method>
+   <name>getDocument</name>
+   <message lang="en">Get a document.</message>
+   <message lang="ja">ドキュメントを取得します。</message>
+   <return>
+    <type>MQDocument</type>
+    <message lang="en">document</message>
+    <message lang="ja">ドキュメント</message>
+   </return>
+  </method>
+  <method>
+   <name>newObject</name>
+   <message lang="en">Create a new object.</message>
+   <message lang="ja">オブジェクトを新規作成します。</message>
+   <return>
+    <type>MQObject</type>
+    <message lang="en">new object</message>
+    <message lang="ja">新規オブジェクト</message>
+   </return>
+   <attention lang="en">This method doesn't add an object into the document.</attention>
+   <attention lang="ja">作成した時点ではドキュメントに登録されていません。</attention>
+  </method>
+  <method>
+   <name>newMaterial</name>
+   <message lang="en">Create a new material.</message>
+   <message lang="ja">マテリアルを新規作成します。</message>
+   <return>
+    <type>MQMaterial</type>
+    <message lang="en">new material</message>
+    <message lang="ja">新規マテリアル</message>
+   </return>
+   <attention lang="en">This method doesn't add a material into the document.</attention>
+   <attention lang="ja">作成した時点ではドキュメントに登録されていません。</attention>
+  </method>
+  <method>
+   <name>newPoint</name>
+   <message lang="en">Create a new MQPoint.</message>
+   <message lang="ja">MQPointを新規作成します。</message>
+   <args>
+    <arg option="1">
+     <name>x</name>
+     <type>float</type>
+     <message lang="en">X coordinate</message>
+     <message lang="ja">X座標</message>
+    </arg>
+    <arg option="1">
+     <name>y</name>
+     <type>float</type>
+     <message lang="en">Y coordinate</message>
+     <message lang="ja">Y座標</message>
+    </arg>
+    <arg option="1">
+     <name>z</name>
+     <type>float</type>
+     <message lang="en">Z coordinate</message>
+     <message lang="ja">Z座標</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQPoint</type>
+    <message lang="en">new point</message>
+    <message lang="ja">新規座標</message>
+   </return>
+  </method>
+  <method>
+   <name>newCoordinate</name>
+   <message lang="en">Create a new MQCoordinate.</message>
+   <message lang="ja">MQCoordinateを新規作成します。</message>
+   <args>
+    <arg option="1">
+     <name>u</name>
+     <type>float</type>
+     <message lang="en">U coordinate</message>
+     <message lang="ja">U座標</message>
+    </arg>
+    <arg option="1">
+     <name>v</name>
+     <type>float</type>
+     <message lang="en">V coordinate</message>
+     <message lang="ja">V座標</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQCoordinate</type>
+    <message lang="en">new coordinate</message>
+    <message lang="ja">新規UV座標</message>
+   </return>
+  </method>
+  <method>
+   <name>newColor</name>
+   <message lang="en">Create a new MQColor.</message>
+   <message lang="ja">MQColorを新規作成します。</message>
+   <args>
+    <arg option="1">
+     <name>r</name>
+     <type>float</type>
+     <message lang="en">red</message>
+     <message lang="ja">赤</message>
+    </arg>
+    <arg option="1">
+     <name>g</name>
+     <type>float</type>
+     <message lang="en">green</message>
+     <message lang="ja">緑</message>
+    </arg>
+    <arg option="1">
+     <name>b</name>
+     <type>float</type>
+     <message lang="en">blue</message>
+     <message lang="ja">青</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQColor</type>
+    <message lang="en">new color</message>
+    <message lang="ja">新規色</message>
+   </return>
+  </method>
+  <method>
+   <name>newAngle</name>
+   <message lang="en">Create a new MQAngle.</message>
+   <message lang="ja">MQAngleを新規作成します。</message>
+   <args>
+    <arg option="1">
+     <name>head</name>
+     <type>float</type>
+     <message lang="en">head angle</message>
+     <message lang="ja">ヘッド角</message>
+    </arg>
+    <arg option="1">
+     <name>pitch</name>
+     <type>float</type>
+     <message lang="en">pitch angle</message>
+     <message lang="ja">ピッチ角</message>
+    </arg>
+    <arg option="1">
+     <name>bank</name>
+     <type>float</type>
+     <message lang="en">bank angle</message>
+     <message lang="ja">バンク角</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQAngle</type>
+    <message lang="en">new angle</message>
+    <message lang="ja">新規回転角</message>
+   </return>
+  </method>
+  <method>
+   <name>newMatrix</name>
+   <message lang="en">Create a new MQMatrix.</message>
+   <message lang="ja">MQMatrixを新規作成します。</message>
+   <return>
+    <type>MQMatrix</type>
+    <message lang="en">new matrix</message>
+    <message lang="ja">新規行列</message>
+   </return>
+   <attention lang="en">The new matrix is indentity.</attention>
+   <attention lang="ja">行列は単位行列として初期化されています。</attention>
+  </method>
+  <method>
+   <name>messageBox</name>
+   <message lang="en">Show a message box.</message>
+   <message lang="ja">メッセージボックスを表示します。</message>
+   <args>
+    <arg>
+     <name>message</name>
+     <type>string</type>
+     <message lang="en">message shown on the dialog box.</message>
+     <message lang="ja">表示するメッセージ</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>println</name>
+   <message lang="en">Output a log with line.</message>
+   <message lang="ja">ログを出力します。（改行あり）</message>
+   <args>
+    <arg>
+     <name>message</name>
+     <type>string</type>
+     <message lang="en">message for output</message>
+     <message lang="ja">出力するメッセージ</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>clearLog</name>
+   <message lang="en">Clear a log.</message>
+   <message lang="ja">ログを消去します。</message>
+  </method>
+  <method>
+   <name>getSystemPath</name>
+   <message lang="en">Get a system path.</message>
+   <message lang="ja">システム予約されたパスを取得します。</message>
+   <args>
+    <arg>
+     <name>type</name>
+     <type>string</type>
+     <message lang="en">type of system path</message>
+     <message lang="ja">システムパスの種類</message>
+     <values>
+      <value value="Root">
+       <message lang="en">root path that contains Metaseq.exe (example: "C:\Program Files\Metaseq")</message>
+       <message lang="ja">Metaseq.exeが存在しているフォルダ （例："C:\Program Files\Metaseq"）</message>
+      </value>
+      <value value="ExeFile">
+       <message lang="en">path of Metaseq.exe (example: "C:\Program Files\Metaseq\Metaseq.exe")</message>
+       <message lang="ja">Metaseq.exeのパス （例："C:\Program Files\Metaseq\Metaseq.exe"）</message>
+      </value>
+      <value value="IniFile">
+       <message lang="en">path of Metaseq.ini (example: "C:\Program Files\Metaseq\Metaseq.ini")</message>
+       <message lang="ja">Metaseq.iniのパス （例："C:\Program Files\Metaseq\Metaseq.ini"）</message>
+      </value>
+      <value value="Data">
+       <message lang="en">path of data folder (example: "C:\Program Files\Metaseq\Metaseq\Data")</message>
+       <message lang="ja">データフォルダのパス （例："C:\Program Files\Metaseq\Metaseq\Data"）</message>
+      </value>
+     </values>
+    </arg>
+   </args>
+  </method>
+ </methods>
+</doc>

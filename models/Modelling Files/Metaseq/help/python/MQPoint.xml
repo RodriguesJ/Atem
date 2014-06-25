@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MQPythonClass.xsl"?>
+<doc>
+ <class>MQPoint</class>
+ <message lang="en">MQPoint contains the position of XYZ coordinates.</message>
+ <message lang="ja">XYZの座標情報を保持します。</message>
+ <properties>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>x</name>
+   <message lang="en">X coordinate</message>
+   <message lang="ja">X座標</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>y</name>
+   <message lang="en">Y coordinate</message>
+   <message lang="ja">Y座標</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>z</name>
+   <message lang="en">Z coordinate</message>
+   <message lang="ja">Z座標</message>
+  </property>
+ </properties>
+ <methods>
+  <method>
+   <name>normalize</name>
+   <message lang="en">Normalize a vector.</message>
+   <message lang="ja">自身のベクトルを正規化します。</message>
+  </method>
+  <method>
+   <name>getNormal</name>
+   <message lang="en">Get a normalized vector.</message>
+   <message lang="ja">正規化ベクトルを取得します。自身のベクトルの内容は変化しません。</message>
+   <return>
+    <type>MQPoint</type>
+    <message lang="en">normalized vector</message>
+    <message lang="ja">正規化ベクトル</message>
+   </return>
+  </method>
+  <method>
+   <name>dotProduct</name>
+   <message lang="en">Calculate a dot product.</message>
+   <message lang="ja">自身と引数ベクトルの内積を計算します。</message>
+   <args>
+    <arg>
+     <name>vec</name>
+     <type>MQPoint</type>
+     <message lang="en">vector</message>
+     <message lang="ja">ベクトル</message>
+    </arg>
+   </args>
+   <return>
+    <type>float</type>
+    <message lang="en">dot product (self.x*vec.x + self.y*vec.y + self.z*vec.z)</message>
+    <message lang="ja">内積 (self.x*vec.x + self.y*vec.y + self.z*vec.z)</message>
+   </return>
+  </method>
+  <method>
+   <name>crossProduct</name>
+   <message lang="en">Calculate a cross product.</message>
+   <message lang="ja">自身と引数ベクトルの外積を計算します。</message>
+   <args>
+    <arg>
+     <name>vec</name>
+     <type>MQPoint</type>
+     <message lang="en">vector</message>
+     <message lang="ja">ベクトル</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQPoint</type>
+    <message lang="en">cross product</message>
+    <message lang="ja">外積</message>
+   </return>
+  </method>
+ </methods>
+</doc>

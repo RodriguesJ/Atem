@@ -1,0 +1,12 @@
+package com.runescape.revised.logic.key;
+
+import com.runescape.revised.system.AbstractGameSystem;
+import com.runescape.revised.system.event.AbstractEvent;
+
+public class KeySystem extends AbstractGameSystem {
+
+	@Override
+	public AbstractEvent executeEvent() {
+		return null;
+	}
+}

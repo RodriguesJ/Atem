@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MQPythonClass.xsl"?>
+<doc>
+ <class>MQCoordinate</class>
+ <message lang="en">MQCoordinate has UV coordinate for a texture mapping.</message>
+ <message lang="ja">テクスチャ表示用のUV座標情報を保持します。</message>
+ <properties>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>u</name>
+   <message lang="en">U coordinate</message>
+   <message lang="ja">U座標</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>v</name>
+   <message lang="en">V coordinate</message>
+   <message lang="ja">V座標</message>
+  </property>
+ </properties>
+</doc>

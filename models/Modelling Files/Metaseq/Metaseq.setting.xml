@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MetasequoiaSetting>
+    <PluginList>
+        <Plugin productID="56A31D20" pluginID="C486EA1D" index="0" type="Export">
+            <FileName>C:\Users\Josh\Desktop\Programming\RuneScape\RuneScape Client\models\Modelling Files\Metaseq\Plugins\Export\ExportRIB.dll</FileName>
+            <String>RenderMan (*.rib)</String>
+            <Enable>1</Enable>
+        </Plugin>
+        <Plugin productID="56A31D20" pluginID="5EAC34E0" index="0" type="Create">
+            <FileName>C:\Users\Josh\Desktop\Programming\RuneScape\RuneScape Client\models\Modelling Files\Metaseq\Plugins\Create\TTFont.dll</FileName>
+            <String>Create text</String>
+            <Enable>1</Enable>
+        </Plugin>
+        <Plugin productID="02D9F048" pluginID="02D9F040" index="0" type="Object">
+            <FileName>C:\Users\Josh\Desktop\Programming\RuneScape\RuneScape Client\models\Modelling Files\Metaseq\Plugins\Object\boolean.dll</FileName>
+            <String>ƒu[ƒŠƒAƒ“</String>
+            <Enable>1</Enable>
+        </Plugin>
+        <Plugin productID="56A31D20" pluginID="157E8FB0" index="0" type="Object">
+            <FileName>C:\Users\Josh\Desktop\Programming\RuneScape\RuneScape Client\models\Modelling Files\Metaseq\Plugins\Object\Wired.dll</FileName>
+            <String>Wired</String>
+            <Enable>1</Enable>
+        </Plugin>
+        <Plugin productID="56A31D20" pluginID="157E8FB0" index="1" type="Object">
+            <FileName>C:\Users\Josh\Desktop\Programming\RuneScape\RuneScape Client\models\Modelling Files\Metaseq\Plugins\Object\Wired.dll</FileName>
+            <String>Delete lines</String>
+            <Enable>1</Enable>
+        </Plugin>
+        <Plugin productID="56A31D20" pluginID="3EA0456F" index="0" type="Select">
+            <FileName>C:\Users\Josh\Desktop\Programming\RuneScape\RuneScape Client\models\Modelling Files\Metaseq\Plugins\Select\Separate.dll</FileName>
+            <String>Separate faces</String>
+            <Enable>1</Enable>
+        </Plugin>
+        <Plugin productID="56A31D20" pluginID="F0567AC5" index="0" type="Select">
+            <FileName>C:\Users\Josh\Desktop\Programming\RuneScape\RuneScape Client\models\Modelling Files\Metaseq\Plugins\Select\VColor.dll</FileName>
+            <String>Erase vertex color</String>
+            <Enable>1</Enable>
+        </Plugin>
+    </PluginList>
+    <ScriptList />
+</MetasequoiaSetting>

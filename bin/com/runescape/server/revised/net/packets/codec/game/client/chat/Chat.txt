@@ -1,0 +1,5 @@
+ChatMessage - the message to send
+ChatPacket - represents a packet to hold the message
+ChatEncoder - encode the packet
+ChatDecoder - decode the packet
+ChatPacketExecutor - execute the packet

@@ -1,0 +1,131 @@
+FileOption {
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	GroupSize	"Size"
+	LabelScale	"Multiply"
+	LabelDiv	"Divide"
+	LabelDigit	"digit"
+	GroupAxis	"Axis"
+	BtnConvXY	"Swap XY"
+	BtnConvYZ	"Swap YZ"
+	BtnConvZX	"Swap ZX"
+	BtnInvertX	"Invert X"
+	BtnInvertY	"Invert Y"
+	BtnInvertZ	"Invert Z"
+	CheckFlipX	"Flip Right and Left"
+	CheckInvertFace	"Invert Face"
+}
+
+Import {
+	LabelSize	"Size"
+	CheckCenter	"Move to center"
+	BtnFitSize	"Fit"
+	BtnReset	"Reset"
+}
+
+ImportObj {
+	GroupOption	"OBJ Option"
+	CheckInvertV	"Invert V of mapping"
+	CheckJoinVertex	"Join closed vertices"
+}
+
+Export {
+}
+
+Export3DS {
+	Group3DSOption	"3DS Option"
+	CheckVisible	"Visible objects only"
+	CheckUV		"Export UV Mapping"
+	CheckFreeze	"Freeze patches"
+	BtnHelp			"Help"
+}
+
+ExportCOB {
+	GroupCobOption	"COB Option"
+	CheckVisible	"Visible objects only"
+	LabelTexturePath	"Texture folder"
+	BtnLoadTexturePath	"Load"
+	LabelBumpPath	"Bump folder"
+	BtnLoadBumpPath	"Load"
+	LabelUnit	"Unit"
+	LabelMapInfo1	"Mappings are saved as"
+	LabelMapInfo2	"link only."
+	LabelMapInfo3	""
+	BtnHelp			"Help"
+}
+
+ExportDXF {
+	GroupDXFOption	"DXF Option"
+	CheckVisible	"Visible objects only"
+	CheckLayerName	"Object's name is exported"
+	Label1		"as a layer".
+	CheckQuad	"Triangle have four points"
+	LabelQuadInfo1	"Some softwares can import"
+	LabelQuadInfo2	"only four points."
+	RadioReturn	"Return code"
+	BtnHelp			"Help"
+}
+
+ExportLWO {
+	GroupLwoOption	"LWO Option"
+	CheckVisible	"Visible objects only"
+	CheckNoFreeze	"Not freeze patches"
+	CheckLWO2		"LWO2 (LW6.0 or later)"
+	CheckAbsPath	"Absolute file path"
+	BtnHelp			"Help"
+}
+
+ExportOBJ {
+	GroupOption	"OBJ Option"
+	CheckVisible	"Visible objects only"
+	CheckGroup	"Grouping"
+	CheckNormal	"Normal vector"
+	CheckUV		"UV Mapping"
+	CheckInvertV	"Invert V"
+	CheckMatLib	"Material library"
+	CheckFreeze	"Freeze patches"
+	RadioReturn	"Return code"
+	BtnHelp			"Help"
+}
+
+ExportPOV {
+	GroupOption	"POV Option"
+	CheckVisible	"Visible objects only"
+	CheckUVMapping	"UV mapping"
+	RadioObject	"Object" "pov" "inc"
+	BtnHelp			"Help"
+}
+
+ExportRDS {
+	GroupOption	"RDS Option"
+	CheckVisible	"Visible objects only"
+	CheckUV		"UV Mapping"
+	BtnHelp			"Help"
+}
+
+ExportSCE {
+	GroupOption	"SCE Option"
+	CheckVisible	"Visible objects only"
+	CheckUV		"UV Mapping"
+	LabelTexturePath	"Texture folder"
+	BtnLoadTexturePath	"Load"
+	BtnHelp			"Help"
+}
+
+ExportSUF {
+	GroupOption	"SUF Option"
+	CheckVisible	"Visible objects only"
+	CheckAtr	"Attribute file"
+	CheckNormal	"Normal (Smooth)"
+	CheckUV		"UV Mapping"
+	BtnHelp			"Help"
+}
+
+ExportX {
+	GroupXOption	"X Option"
+	CheckVisible	"Visible objects only"
+	CheckNormal	"Normal vector"
+	CheckUV		"UV Mapping"
+	CheckVertCol	"Vertex color"
+	BtnHelp			"Help"
+}

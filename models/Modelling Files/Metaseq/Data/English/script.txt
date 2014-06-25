@@ -1,0 +1,82 @@
+ScriptPanel {
+	FormScript	"Script Editor"
+	BtnAdd	"Add"
+}
+
+MainMenu {
+	MenuFile	"&File"
+	MenuNew	"&New"
+	MenuOpen	"&Open"
+	MenuSave	"&Save"
+	MenuSaveAs	"Save As"
+	MenuClose	"Close"
+	MenuEdit	"&Edit"
+	MenuUndo	"&Undo"
+	MenuRedo	"&Redo"
+	MenuCut	"Cut"
+	MenuCopy	"Copy"
+	MenuPaste	"Paste"
+	MenuSelectAll	"Select All"
+	MenuBoxSelect	"Box Select"
+	MenuFindRoot	"Find"
+	MenuFind	"Find"
+	MenuFindNext	"Find Next"
+	MenuReplace	"Replace"
+	MenuView	"View"
+	MenuLog	"Log"
+	MenuLineNumber	"Line Number"
+	MenuShowTab	"Show Tab"
+	MenuShortcut	"Shortcut list"
+	MenuScript	"Script"
+	MenuRun	"Run"
+	MenuClearLog	"Clear Log"
+	MenuHelp	"Help"
+	MenuIndex	"Index"
+}
+
+PopupMenuEditor {
+	MenuPopupCut	"Cut"
+	MenuPopupCopy	"Copy"
+	MenuPopupPaste	"Paste"
+	MenuPopupBoxPaste	"Box Paste"
+	MenuPopupDelete	"Delete"
+	MenuPopupBoxSelect	"Box Select"
+}
+
+PopupMenuShortcut {
+	MenuShortcutLoad	"Load"
+	MenuShortcutEdit	"Edit"
+	MenuShortcutDelete	"Remove"
+}
+
+ScriptSearch {
+	FormScriptSearch	"Find"
+	LabelSearch	"Find"
+	CheckWord	"Match word"
+	CheckCapital	"Match case"
+	BtnFind	"Find Next"
+	BtnCancel	"Cancel"
+	RadioForward	"Direction"	"Forward"	"Backward"
+}
+
+ScriptReplace {
+	FormScriptReplace
+	LabelSearch	"Find"
+	LabelReplace	"Replace with"
+	CheckWord	"Word"
+	CheckCapital	"Capital"
+	BtnReplace	"Replace"
+	BtnReplaceAll	"Replace all"
+	BtnCancel	"Close"
+	RadioForward	"Direction"	"Forward"	"Backward"
+}
+
+ScriptAdd {
+	DlgScriptAdd	"Add a script"
+	BtnOK		"OK"
+	BtnCancel	"Cancel"
+	LabelFilename	"Filename"
+	LabelTitle	"Title"
+	BtnLoadTexture	"Load"
+}
+

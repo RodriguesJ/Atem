@@ -1,0 +1,117 @@
+PaintPanel {
+	FormPaint	"Paint Panel"
+	LabelEditVisible	"E  V"
+	RadioTexture	"Tex"
+	RadioAlpha	"Alpha"
+	RadioBump	"Bump"
+	LabelZoom	"Z"
+	BtnBrush	"Brush"
+	BtnPalette	"Palette"
+	BtnColor	"Color"
+}
+
+PaintMenu {
+	MenuFile	"File"
+	MenuReload	"Reload from File"
+	MenuSave	"Save to File"
+	MenuResize	"Resize"
+	MenuScroll	"Scroll"
+	MenuEffect	"Effect"
+
+	MenuEdit	"Edit"
+	MenuUndo	"Undo"
+	MenuPushBuffer	"Copy to Buffer"
+	MenuPopBuffer	"Paste from Buffer"
+	MenuCopy	"Copy to Clipboard"
+	MenuPaste	"Paste from Clipboard"
+	
+	MenuView	"View"
+	MenuRealtime	"Realtime update"
+}
+
+BrushPanel {
+	FormBrush	"Brush Panel"
+
+	TabPen	"Pen"
+	LabelPenSize	"Size"
+	LabelPenInterval	"Interval"
+	LabelPower	"Power"
+
+	TabFigure	"Figure"
+	BtnFigureLoad	"Load"
+	BtnFigureSave	"Save"
+	BtnFigureDelete	"Del"
+	LabelFigureInterval	"Interval"
+
+	TabPaint	"Paint"
+	LabelPaintRange	"Range"
+
+	TabTexture	"Texture"
+	BtnTextureLoad	"Load"
+	BtnTextureSave	"Save"
+	BtnTextureDelete	"Del"
+}
+
+BrushLoad {
+	"All supported files|*.mqb;*.bmp;*.ppm;*.tga;*.png;*.jpg;*.jpeg;*.tim"
+	"Metasequoia Brush (*.mqb)|*.mqb"
+	"Windows Bitmaps (*.bmp)|*.bmp"
+	"Portable Pixelmap (*.ppm)|*.ppm"
+	"Targa (*.tga)|*.tga"
+	"Portable Network Graphics (*.png)|*.png"
+	"Jpeg (*.jpg;*.jpeg)|*.jpg;*.jpeg"
+	"PlayStation (*.tim)|*.tim"
+}
+
+BrushSave {
+	"Metasequoia Brush (*.mqb)|*.mqb"
+}
+
+ColorPanel {
+	FormColor	"Color Panel"
+	LabelAlpha	"A"
+	LabelBump	"B"
+}
+
+ColorPalette {
+	FormColorPalette	"Color Palette"
+	BtnSelect	"Sel"
+	BtnReplace	"Rep"
+	BtnDelete	"Del"
+	BtnLoad	"Load"
+	BtnSave	"Save"
+}
+
+PaletteLoad {
+	"Metasequoia Palette (*.mqp)|*.mqp"
+}
+
+PaletteSave {
+	"Metasequoia Palette (*.mqp)|*.mqp"
+}
+
+Scroll {
+	DlgScroll	"Scroll"
+	OkBtn	"OK"
+	GroupScroll	"Offset"
+	BtnCancel	"Cancel"
+	LabelWidth	"Horizonal"
+	LabelHeight	"Vertical"
+	LabelMes1	"Relative value to the"
+	LabelMes2	"original bitmap."
+}
+
+TexSize {
+	DlgTexSize	"Sizes of mapping bitmaps"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	GroupOriginal	"Original size"
+	LabelW	"Width"
+	LabelH	"Height"
+	LabelTexture	"Texture"
+	LabelAlpha	"Alpha"
+	LabelBump	"Bump"
+	LabelNewW	"Width"
+	LabelNewH	"Height"
+	GroupNewSize	"New size"
+}

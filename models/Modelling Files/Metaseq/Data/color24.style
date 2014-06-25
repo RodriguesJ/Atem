@@ -1,0 +1,148 @@
+IconFile "color24.bmp"
+
+PanelCommand	0 0 116
+
+GroupSystem	2 * 112 110 Alias
+PanelFile	2 16 17 33
+BtnOpen	20 16 45 17 GradBtn
+BtnSave	64 16 45 17 GradBtn
+BtnSaveAs	20 32 45 17 GradBtn
+BtnInsert	64 32 45 17 GradBtn
+BtnConfig	2 54 54 17 GradBtn
+BtnDocInfo	55 54 54 17 GradBtn
+BtnObjectPanel	2 74 54 17 GradBtn
+BtnObjectProperty	55 74 54 17 GradBtn
+BtnMaterialPanel	2 90 54 17 GradBtn
+BtnMaterialProperty	55 90 54 17 GradBtn
+
+GroupEdit	2 * 112 150 Alias
+BtnUndo	2 16 54 17 GradBtn
+BtnRedo	55 16 54 17 GradBtn
+BtnSelectAll	2 38 54 17 GradBtn
+BtnUnselectAll	55 38 54 17 GradBtn
+BtnSelectCurObj 2 54 54 17 GradBtn
+BtnSelectCurMat	55 54 54 17 GradBtn
+BtnHideFace	2 76 54 17 GradBtn
+BtnShowFace	55 76 54 17 GradBtn
+BtnFix	2 92 54 17 GradBtn
+BtnUnfix	55 92 54 17 GradBtn
+TextStore	2 114 42 16
+BtnStore1	44 114 17 17 GradBtn
+BtnStore2	60 114 17 17 GradBtn
+BtnStore3	76 114 17 17 GradBtn
+BtnStore4	92 114 17 17 GradBtn
+TextRestore	2 130 42 17
+BtnRestore1	44 130 17 17 GradBtn
+BtnRestore2	60 130 17 17 GradBtn
+BtnRestore3	76 130 17 17 GradBtn
+BtnRestore4	92 130 17 17 GradBtn
+
+GroupCommand	2 * 112 385 Alias
+PanelEdit	* * * * Invisible
+PanelFace	* * * * Invisible
+PanelLine	* * * * Invisible
+PanelMisc	* * * * Invisible
+
+BtnComSelect	2 15 36 36 Icon(0 0 36 36)
+BtnComRect	39 15 36 36 Icon(37 0 36 36)
+BtnComRope	76 15 36 36 Icon(74 0 36 36)
+
+BtnComMove	2 52 36 36 Icon(0 37 36 36)
+BtnComRotate	39 52 36 36 Icon(37 37 36 36)
+BtnComScale	76 52 36 36 Icon(74 37 36 36)
+
+BtnComInvert	2 89 36 36 Icon(0 74 36 36)
+BtnComPrimitive	39 89 36 36 Icon(37 74 36 36)
+BtnComCreate	76 89 36 36 Icon(74 74 36 36)
+
+BtnComMagnet	2 126 36 36 Icon(0 111 36 36)
+BtnComPullFace	39 126 36 36 Icon(37 111 36 36)
+BtnComExtrude	76 126 36 36 Icon(74 111 36 36)
+
+BtnComDeleteFace	2 163 36 36 Icon(74 148 36 36)
+BtnComWire	39 163 36 36 Icon(0 148 36 36)
+BtnComKnife	76 163 36 36 Icon(37 148 36 36)
+
+
+BtnComTwist	2 200 36 36 Icon(37 185 36 36)
+BtnComMaterial	39 200 36 36 Icon(74 185 36 36)
+BtnComLocalEdit	76 200 36 36 Icon(0 333 36 36)
+
+BtnComLattice	2 237 36 36 Icon(74 222 36 36)
+BtnComShear	39 237 36 36 Icon(0 222 36 36)
+BtnComBend	76 237 36 36 Icon(37 222 36 36)
+
+BtnComMapping	2 274 36 36 Icon(0 259 36 36)
+BtnComUVEdit	39 274 36 36 Icon(37 259 36 36)
+BtnComMapPaint	76 274 36 36 Icon(74 259 36 36)
+
+BtnComBevel	2 311 36 36 Icon(0 185 36 36)
+BtnComWeit	39 311 36 36 Icon(37 296 36 36)
+BtnComVertexColor	76 311 36 36 Icon(74 296 36 36)
+
+BtnComBlob	2 348 36 36 Icon(0 296 36 36)
+BtnComBackImage	39 348 36 36 Icon(37 333 36 36)
+BtnComView	76 348 36 36 Icon(74 333 36 36)
+
+
+GroupOption	2 * 112 100 Alias
+BtnSnapWorld	2 16 27 17 GradBtn
+BtnSnapScreen	31 16 27 17 GradBtn
+BtnSnapLocal	60 16 27 17 GradBtn
+BtnEditRope		93 16 17 17 Icon(17 387 17 17)
+
+BtnSnapX		2 38 27 17 GradBtn
+BtnSnapY		31 38 27 17 GradBtn
+BtnSnapZ		60 38 27 17 GradBtn
+BtnEditRect		93 38 17 17 Icon(0 387 17 17)
+
+BtnEditPoint	2 60 27 17 Icon(0 404 27 17)
+BtnEditLine		31 60 27 17 Icon(27 404 27 17)
+BtnEditFace		60 60 27 17 Icon(54 404 27 17)
+
+BtnEditCurObj	2 82 35 17 GradBtn
+BtnEditGrid		39 82 35 17 GradBtn
+BtnEditSymmetry	76 82 35 17 GradBtn
+
+GroupView	2 * 115 75 Alias
+PanelPers	2 16 17 34
+BtnPersView 20 16 91 17 GradBtn
+BtnMeshYZ	20 35 23 17 GradBtn
+BtnMeshZX	44 35 23 17 GradBtn
+BtnMeshXY	68 35 23 17 GradBtn
+BtnAxis	94 35 17 17 GradBtn
+PanelThree	2 56 17 17
+Btn3View	20 56 47 17 GradBtn
+BtnMesh3	68 56 47 17 GradBtn
+
+GroupLight	2 * 112 * Alias
+PaintLight	6 * * *
+CheckBackLight	32 * * *
+
+BtnPersPoint	40 1 17 17 Icon(0 370 17 17)
+BtnPersLine	60 1 17 17 Icon(17 370 17 17)
+BtnPersFace	80 1 17 17 Icon(34 370 17 17)
+BtnPersSimple	110 1 17 17 Icon(51 370 17 17)
+BtnPersFront	130 1 17 17 Icon(68 370 17 17)
+BtnPersImage	150 1 17 17 Icon(85 370 17 17)
+
+BtnTopPoint	40 1 17 17 Icon(0 370 17 17)
+BtnTopLine	60 1 17 17 Icon(17 370 17 17)
+BtnTopFace	80 1 17 17 Icon(34 370 17 17)
+BtnTopSimple	110 1 17 17 Icon(51 370 17 17)
+BtnTopFront	130 1 17 17 Icon(68 370 17 17)
+BtnTopImage	150 1 17 17 Icon(85 370 17 17)
+
+BtnFrontPoint	40 1 17 17 Icon(0 370 17 17)
+BtnFrontLine	60 1 17 17 Icon(17 370 17 17)
+BtnFrontFace	80 1 17 17 Icon(34 370 17 17)
+BtnFrontSimple	110 1 17 17 Icon(51 370 17 17)
+BtnFrontFront	130 1 17 17 Icon(68 370 17 17)
+BtnFrontImage	150 1 17 17 Icon(85 370 17 17)
+
+BtnLeftPoint	40 1 17 17 Icon(0 370 17 17)
+BtnLeftLine	60 1 17 17 Icon(17 370 17 17)
+BtnLeftFace	80 1 17 17 Icon(34 370 17 17)
+BtnLeftSimple	110 1 17 17 Icon(51 370 17 17)
+BtnLeftFront	130 1 17 17 Icon(68 370 17 17)
+BtnLeftImage	150 1 17 17 Icon(85 370 17 17)

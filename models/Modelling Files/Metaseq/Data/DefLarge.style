@@ -1,0 +1,104 @@
+PanelCommand	0 0 155
+
+GroupSystem	8 * 139 137 Alias
+PanelFile	8 16 19 41
+BtnOpen	28 16 52 21
+BtnSave	79 16 52 21
+BtnSaveAs	28 36 52 21
+BtnInsert	79 36 52 21
+BtnConfig	8 62 62 21
+BtnDocInfo	69 62 62 21
+BtnObjectPanel	8 88 62 21
+BtnObjectProperty	69 88 62 21
+BtnMaterialPanel	8 108 62 21
+BtnMaterialProperty	69 108 62 21
+
+GroupEdit	8 * 139 179 Alias
+BtnUndo	8 16 62 21
+BtnRedo	69 16 62 21
+BtnSelectAll	8 42 62 21
+BtnUnselectAll	69 42 62 21
+BtnSelectCurObj 8 62 62 21
+BtnSelectCurMat	69 62 62 21
+BtnHideFace	8 88 62 21
+BtnShowFace	69 88 62 21
+BtnFix	8 108 62 21
+BtnUnfix	69 108 62 21
+TextStore	8 134 46 20
+BtnStore1	54 134 20 21
+BtnStore2	73 134 20 21
+BtnStore3	92 134 20 21
+BtnStore4	111 134 20 21
+TextRestore	8 154 46 21
+BtnRestore1	54 154 20 21
+BtnRestore2	73 154 20 21
+BtnRestore3	92 154 20 21
+BtnRestore4	111 154 20 21
+
+GroupCommand	8 * 139 445 Alias
+PanelEdit	8 15 19 121
+BtnComSelect	28 15 103 21
+BtnComRect	28 35 52 21
+BtnComRope	79 35 52 21
+BtnComMove	28 55 103 21
+BtnComScale	28 75 52 21
+BtnComRotate	79 75 52 21
+BtnComLocalEdit	28 95 103 21
+BtnComUVEdit	28 115 52 21
+BtnComMapping	79 115 52 21
+PanelFace	8 142 19 81
+BtnComPrimitive	28 142 103 21
+BtnComCreate	28 162 103 21
+BtnComDeleteFace	28 182 52 21
+BtnComInvert	79 182 52 21
+BtnComExtrude	28 202 52 21
+BtnComMaterial	79 202 52 21
+PanelLine	8 229 19 141
+BtnComPullFace	28 229 52 21
+BtnComBevel	79 229 52 21
+BtnComMagnet	28 249 103 21
+BtnComTwist	28 269 52 21
+BtnComBend	79 269 52 21
+BtnComShear	28 289 52 21
+BtnComLattice	79 289 52 21
+BtnComWire	28 309 103 21
+BtnComKnife	28 329 103 21
+BtnComWeit	28 349 52 21
+BtnComVertexColor	79 349 52 21
+PanelMisc	8 376 19 61
+BtnComBlob	28 376 103 21
+BtnComMapPaint	28 396 103 21
+BtnComBackImage	28 416 52 21
+BtnComView	79 416 52 21
+
+GroupOption	8 * 139 115 Alias
+BtnSnapX	8 16 23 21
+BtnSnapY	34 16 23 21
+BtnSnapZ	60 16 23 21
+BtnSnapLocal	8 40 23 21
+BtnSnapWorld	34 40 23 21
+BtnSnapScreen	60 40 23 21
+BtnEditPoint	8 64 23 21
+BtnEditLine	34 64 23 21
+BtnEditFace	60 64 23 21
+BtnEditRect	86 16 23 21
+BtnEditRope	109 16 23 21
+BtnEditCurObj	8 88 39 21
+BtnEditGrid	50 88 40 21
+BtnEditSymmetry	93 88 39 21
+
+GroupView	8 * 139 93 Alias
+PanelPers	8 16 19 45
+BtnPersView	27 16 105 21
+BtnMeshYZ	27 40 25 21
+BtnMeshZX	52 40 25 21
+BtnMeshXY	77 40 25 21
+BtnAxis	107 40 25 21
+PanelThree	8 65 19 21
+Btn3View	27 65 58 21
+BtnMesh3	90 65 42 21
+
+GroupLight	8 * 139 * Alias
+PaintLight	20 * * *
+CheckBackLight	48 * * *
+

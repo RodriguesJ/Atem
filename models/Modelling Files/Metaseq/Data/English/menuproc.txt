@@ -1,0 +1,302 @@
+ExpDoga {
+	DlgExpDoga	"Export to DOGA-L series"
+	BtnNewFolder	"New"
+	BtnRegister	"Register"
+	LabelFolder	"Folder"
+	BtnSetFolder	"Change"
+	BtnDelete	"Delete"
+	LabelPolygon	"Polygons:"
+	BtnConfig	"Configuration"
+	BtnCancel	"Cancel"
+}
+
+DogaConfig {
+	DlgDogaConfig	"Configuration"
+	LabelFolder	"Folder"
+	BtnOK		"OK"
+	BtnCancel	"Cancel"
+	BtnLoad		"Load"
+	LabelBkColor	"BkColor"
+}
+
+DogaNewFolder {
+	DlgDogaNewFolder	"Create a new folder"
+	LabelFolder	"Folder"
+	LabelEnglish	"English"
+	LabelJapanese	"Japanese"
+	BtnOK		"OK"
+	BtnCancel	"Cancel"
+}
+
+Extrude {
+	DlgExtrudeFace	"Extrude faces"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	RadioType	"Type" "Normal" "Bevel"
+	LabelSize	"Offset"
+	CheckSelectSide	"Select side"
+}
+
+AlignVertex {
+	DlgAlignVertex	"Align Vertices"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	LabelMin	"Min"
+	LabelMax	"Max"
+	LabelPosition	"Position"
+	LabelApply	"Apply"	
+}
+
+Landscape {
+	DlgLandscape	"Landscape"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	BtnLoad	"Load File"
+	BtnFractal	"Fractal"
+	GroupInfo	"Information"
+	LabelBmpW	"W"
+	LabelBmpH	"H"
+	GroupSize	"Size"
+	LabelSizeU	"U"
+	LabelSizeV	"V"
+	LabelHeight	"W"
+	GroupSegment	"Segment"
+	LabelSegU	"U"
+	LabelSegV	"V"
+}
+
+Mirror {
+	DlgMirror	"Mirror"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	GroupOption	""
+}
+
+Flatten {
+	DlgFlatten	"Flatten"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	LabelWeight	"Weight"
+	LabelRough	"Rough"
+	LabelFlat	"Flat"
+}
+
+Round {
+	DlgRound	"Round"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	LabelLength	"Length"
+}
+
+Freeze {
+	DlgFreeze	"Freeze"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	GroupAttr	"Attribute"
+	CheckPatch	"Patch"
+	CheckMirror	"Mirror"
+	CheckLathe	"Lathe"
+	GroupObject	"Object"
+	CheckNewObject	"As a new object"
+}
+
+ShiftPos {
+	DlgShiftPos	"Shift Position"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	GroupBoundingBox	"Bounding Box"
+	LabelBBoxMin	"Min"
+	LabelBBoxMax	"Max"
+	LabelSize	"Size"
+	RadioAction	"Action" "Move center to 0" "Move min to 0" "Move max to 0"
+	GroupAxis	"Axis"
+	CheckAxisX	"X"
+	CheckAxisY	"Y"
+	CheckAxisZ	"Z"
+}
+
+JoinNearVertex {
+	DlgJoinNearVertex	"Join Closed Vertices"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	GroupParam	""
+	LabelDistance	"Closed distance"
+	CheckSelectOnly	"Apply selected parts only"
+}
+
+MeshSmooth {
+	DlgMeshSmooth	"Mesh Smoothing"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	GroupOption	"Option"
+	LabelDivision	"Segment"
+}
+
+ReducePolygon {
+	DlgReducePolygon	"Reduce polygons"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	GroupParam	""
+	LabelCount	"Vertices after reduction"
+}
+
+Wrap {
+	DlgWrap	"UV-Wrapping"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	TabCylinder	"Cylindical"
+	TabSphere	"Spherical"
+	GroupCenter	"Center Point"
+	GroupHeight	"Height"
+}
+
+DocInfo {
+	DlgDocInfo	"Document Information"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+
+	GroupStandard	"Information"
+	LabelObject	"Objects"
+	LabelMaterial	"Materials"
+	LabelUsedMat	"Used materials"
+
+	GroupObject	"Object"
+	LabelVertex	"Vertices"
+	LabelFace	"Faces"
+	LabelFace2	"Lines"
+	LabelFace3	"Triangles"
+	LabelFace4	"Rectangles"
+	LabelPatchFace	"Patch"
+
+	GroupAmbient	"Ambient"
+	BtnColorLibrary	"Color library"
+	ColorPanel
+
+	GroupLight	"Direction of light"
+	LabelLightMes1	""
+	LabelLightMes2	""
+	CheckBackLight	"Backlight"
+}
+
+Grid {
+	DlgGrid	"Set Grid"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	GroupGrid	"Grid"
+	LabelSize	"Interval"
+	LabelAxis	"Applied Axis"
+	CheckX	"X"
+	CheckY	"Y"
+	CheckZ	"Z"
+	GroupMesh	"Mesh"
+	CheckMeshAuto	"Auto interval of mesh"
+	LabelMeshSize	"Size"
+	LabelMeshInterval	"Interval"
+}
+
+SetView {
+	DlgSetView	"Set View"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	BtnInit	"Initialize"
+	GroupOption	"Angle"
+	LabelHead	"Head"
+	LabelPich	"Pich"
+	LabelBank	"Bank"
+	RadioZoom	"Zoom"
+	RadioFOV	"Field of view"
+	LabelZoom	"Zoom"
+	LabelPers	"Pers"
+	LabelFOV	"FOV"
+	LabelDistance	"Distance"
+	LabelShift1	"Call this menu with shift button,"
+	LabelShift2	"and the view will initialize."
+}
+
+SetBkImage {
+	DlgSetBkImage	"Set Background Image"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	LabelPers	"Pers"
+	Label1	"Top"
+	Label2	"Front"
+	Label3	"Left"
+	Label4	"Bottom"
+	Label5	"Back"
+	Label6	"Right"
+	BtnPersLoad	"Load"
+	BtnPersView	"View"
+	BtnTopLoad	"Load"
+	BtnTopView	"View"
+	BtnFrontLoad	"Load"
+	BtnFrontView	"View"
+	BtnLeftLoad	"Load"
+	BtnLeftView	"View"
+}
+
+BmpView {
+	BtnOk	"Close"
+	LabelError1 "Cannot open the file."
+	LabelError2 ""
+	LabelWidth "Width"
+	LabelHeight "Height"
+	LabelBpp "Bpp"
+}
+
+Color {
+	DlgColor	"Color"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	BtnColorLibrary	"Color Library"
+}
+
+Folder {
+	DlgFolder	"Folder"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+}
+
+About {
+	DlgAbout	"About"
+	BtnOk	"OK"
+}
+
+PlugIn {
+	DlgPlugIn	"Plug-In"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	BtnInstall	"Install"
+	PanelVersion	"Checks are disable."
+}
+
+PlugInOpen {
+	"DLL file (*.dll)|*.dll"
+	"All files (*.*)|*.*"
+}
+
+Render {
+	DlgRender	"Rendering"
+	BtnOk		"OK"
+	BtnRender	"Rendering"
+	BtnSave		"Save"
+	GroupSize	"Size"
+	ComboSize	"QVGA (320*240)" "VGA (640*480)" "SVGA (800*600)" "XGA (1024*768)" "SXGA (1280*1024)" "DV (720*480)" "HDV 720i (1280*720)" "Custom"
+	LabelWidth	"Width"
+	LabelHeight	"Height"
+	CheckAntiAlias	"Anti-alias"
+	GroupEffect	"Effect"
+	;CheckDOF	"Depth of field"
+	LabelBkColor	"Bk. color"
+	CheckToonEdge	"Toon"
+	LabelToonEdge	"Edge Wd."
+	BtnEdgeChange	"Apply chg."
+	TabChannel	"RGB" "Alpha"
+}
+
+Register {
+	DlgRegister	"Registration"
+	OkBtn	"OK"
+	LabelUserID	"Serial-ID"
+	LabelPassword	"Password"
+	BtnClear	"Clear registration"
+}

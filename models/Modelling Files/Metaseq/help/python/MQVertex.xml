@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MQPythonClass.xsl"?>
+<doc>
+ <class>MQVertex</class>
+ <message lang="en">MQVertex has an information of the vertex in the object.</message>
+ <message lang="ja">オブジェクト中の一頂点の情報を保持します。</message>
+ <properties>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type>long</type>
+   <name>id</name>
+   <message lang="en">unique ID</message>
+   <message lang="ja">頂点を識別するユニークID</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type>int</type>
+   <name>ref</name>
+   <message lang="en">reference count</message>
+   <message lang="ja">参照数</message>
+   <values>
+    <value value="0">
+     <message lang="en">deleted</message>
+     <message lang="ja">頂点は既に削除されている</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>select</name>
+   <message lang="en">state of the selection</message>
+   <message lang="ja">選択状態</message>
+   <values>
+    <value value="0">
+     <message lang="en">not selected</message>
+     <message lang="ja">選択されていない</message>
+    </value>
+    <value value="1">
+     <message lang="en">selected</message>
+     <message lang="ja">選択されている</message>
+    </value>
+   </values>
+  </property>
+ </properties>
+ <methods>
+  <method>
+   <name>getPos</name>
+   <message lang="en">Get a position of the vertex.</message>
+   <message lang="ja">頂点の位置を取得します。</message>
+   <return>
+    <type>MQPoint</type>
+    <message lang="en">position of the vertex</message>
+    <message lang="ja">頂点の位置</message>
+   </return>
+  </method>
+  <method>
+   <name>setPos</name>
+   <message lang="en">Set a position of the vertex.</message>
+   <message lang="ja">頂点の位置を設定します。</message>
+   <args>
+    <arg>
+     <name>pos</name>
+     <type>MQPoint</type>
+     <message lang="en">new position of the vertex</message>
+     <message lang="ja">新しい頂点座標</message>
+    </arg>
+   </args>
+  </method>
+ </methods>
+</doc>

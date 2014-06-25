@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MQPythonClass.xsl"?>
+<doc>
+ <class>MQAngle</class>
+ <message lang="en">MQAngle defines a rotation as the euler angle.</message>
+ <message lang="ja">オイラー角として定義される回転角です。Y軸、X軸, Z軸の順に回転を行います。</message>
+ <properties>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>head</name>
+   <message lang="en">head angle</message>
+   <message lang="ja">ヘッド角</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>pitch</name>
+   <message lang="en">pitch angle</message>
+   <message lang="ja">ピッチ角</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>bank</name>
+   <message lang="en">bank angle</message>
+   <message lang="ja">バンク角</message>
+  </property>
+ </properties>
+ <methods>
+  <method>
+   <name>getMatrix</name>
+   <message lang="en">Get a rotation matrix.</message>
+   <message lang="ja">オイラー角から回転行列を計算して取得します。</message>
+   <return>
+    <type>MQMatrix</type>
+    <message lang="en">rotation matrix</message>
+    <message lang="ja">回転行列</message>
+   </return>
+  </method>
+ </methods>
+</doc>

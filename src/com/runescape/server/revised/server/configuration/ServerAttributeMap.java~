@@ -1,0 +1,5 @@
+package com.runescape.revised.server.configuration;
+
+public class ServerAttributeMap {
+
+}

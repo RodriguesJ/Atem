@@ -1,0 +1,626 @@
+Save	"Save"
+Insert	"Insert"
+Object	"Object"
+Material	"Material"
+ObjErr	"Object Error"
+SelErr	"Select Error"
+GLErr	"OpenGL Error"
+D3DErr	"Direct3D Error"
+ReadErr	"Read Error"
+InsertErr	"Insert Error"
+MemoryErr	"Not enough memory."
+NoObject	"No object is selected."
+NoMaterial	"No material is selected."
+FaceErr		"No face is selected."
+LockErr		"Current object is locked."
+UndoMemoryErr	"Not enough memory for undo."
+Untitled	"Untitled"
+BasicMode	"Now basic mode is set.\nFunctions that aren't important are hidden."
+NotRegSave	"Only registered version can save."
+NotRegExport	"Only registered version can export."
+ErrorOnRender	"Error occurred in the rendering."
+ReadAccessViolation	"Access violation in module %s at address %p, for reading %p"
+WriteAccessViolation	"Access violation in module %s at address %p, for writing %p"
+GLFailSPF	"Failed SetPixelFormat()."
+GLFailwMC	"Failed wglMakeCurrent()."
+GLFailRend	"Failed rendering with OpenGL."
+D3DFailRend	"Failed rendering with Direct3D."
+LoadFileErr	"Failed to load file."
+NoObjInFile	"No object in this file."
+NeedSave	"Document has changed.\nDo you want to save the changes?"
+SaveFileErr	"Failed to save file."
+NoUnusedMat	"No used material."
+DelAllMat	"Are you sure to delete all materials?"
+MergeMat	"Are you sure to merge %1 into %2?"
+ExistMat	"%1 already exists."
+DelChildObj	"Do you want to delete children objects?"
+NotSwapChild	"Cannot swap a parent object and a child object.
+MergeAllObj	"Are you sure to merge all objects into %1?"
+MergeAllVisObj	"Are you sure to merge all visible objects into %1?"
+MergeObjDlg	"Merge %1 into %2"
+NoVertex	"No vertex exists."
+Help		"Help"
+NoHelp		"Cannot find %1."
+NotSize0	"Cannot set zero size."
+NotLoadAscii	"Cannot load a file of ASCII format."
+PluginOverwrite	"%1 already exists.\nAre you sure to overwrite?"
+PlugInsSucceed	"Succeeded to install."
+PlugInsInvalid	"Failed to install for some reason."
+PlugInsNotPlugin	"This file isn't plug-in for Metasequoia."
+PlugInsFail	"Failed to install."
+NoPythonDll	"python22.dll not found."
+UpdateSocketErr	"Failed to get an update information.\nPlease confirm the connection to an internet.\n(%1)"
+UpdateTimeout	"Failed to get an update information.\nPlease go to homepage directly.\n(%1)"
+UpdateProtocolExcep	"Failed to get an update information.\nPlease go to homepage directly.\n(%1)"
+UpdateErr	"Failed to get an update information.\n(%1)"
+UpdateLatest	"This version is latest."
+UpdateNewer	"Latest version %s is released."
+UpdateNewerDev	"Latest beta version '%s' is released."
+SendErrorConfirm	"It sends error information to the developer of Metasequoia."
+SendErrorSucceed	"Succeeded!\nThanks."
+SendErrorFailed		"Failed to send for some reason.\nPlease save error information to a file, and send it by e-mail."
+RenderGDI	"Wireframe"
+RenderMQR	"Software"
+DogaNoPartsIni	"Cannot find '\\common\\parts\\parts.ini'.\nSet the 'DOGACGA' folder from the configration."
+DogaNoParts	"No parts are registered in this position."
+DogaDeleteParts	"Are you sure to delete this parts?"
+DogaPartsDeleted	"The parts are deleted."
+DogaPartsOverwrite	"The parts already exists in this position.\nAre you sure to overwrite?"
+DogaPartsRegistered	"A new parts is registered."
+DogaAllParam	"All items must be input."
+DogaSameFolder	"A same named folder exists.\nInput a different name."
+RDSFace3	"A line shared by three or more faces exists\nIt may not be loaded RayDream normally."
+3DSTooLongObjName	"Object's name is too long. It must be equal or less to 9 characters."
+3DSTooLongMatName	"Material's name is too long. It must be equal or less to 15 characters."
+3DSTooLongTexName	"Texture's name is too long. It must be equal or less to 12 characters."
+
+ScriptReplaceMes	"Are you sure to replace?"
+ScriptNotFound	"Not found '%s'."
+ScriptChanged	"Scpirt has changed.\nAre you sure to save a file?"
+ScriptFind	"Find"
+ScriptReplace	"Replace"
+ScriptLoadNoPyFile	"The dropped file isn't .py.\nAre you sure to load this file?"
+ScriptRemoveList	"Are you sure to delete this button?\n(This function reserves the scripting file.)
+
+MatNoName	"Material must be named."
+MatSameName	"Same named material exists."
+MatDblQuotName	"Cannot use double quotation marks."
+MatIncName	"Incorrect name."
+ObjNoName	"Object must be named."
+ObjSameName	"Same named object exists."
+ObjDblQuotName	"Cannot use double quotation marks."
+
+EditX "Enable to edit on X axis"
+EditY "Enable to edit on Y axis"
+EditZ "Enable to edit on Z axis"
+EditH "Enable to edit on head angle"
+EditP "Enable to edit on pich angle"
+EditB "Enable to edit on bank angle"
+EditU "Enable to edit on U axis"
+EditV "Enable to edit on V axis"
+
+SelTitle Select
+SelNormal Normal
+SelNormalHint ""
+SelNormalMes "L=Select single  Shift+L=Select with drag"
+SelJoin "Joined face"
+SelJoinHint ""
+SelJoinMes "L=Select vertex or face"
+SelBelt Belt
+SelBeltHint ""
+SelBeltMes "L=Select line"
+SelCurObj CurObj
+SelCurObjHint "Determine a current object"
+SelCurObjMes "L=Select vertex, line or face"
+SelBrush "Brush"
+SelBrushHint "Selection with circle"
+SelBrushMes "L=Select vertices and lines with drag  Alt+L=Drag to determinate a radius"
+
+RectMes "L=Set range  Shift+L=Add selection  Ctrl+L=Subtract selection"
+
+MoveTitle	Move
+MoveHandle	Handle
+MoveRel		Rel
+MoveRelHint	"Relative coordinate"
+MoveAbs		Abs
+MoveAbsHint	"Absolute coordinate"
+MoveMes		"L=Select and move  Shift+L=Add selection"
+MoveDragMes	"Shift+L=Move horizonally or vertically"
+MoveVertMes	"  R=Snap to the other vertex"
+MoveFaceMes	"  R=Move to the direction of a face"
+
+ScaleTitle	Scale
+ScaleHandle	Handle
+ScaleEq		Proportional
+ScaleScreen	Screen
+ScaleX		X
+ScaleY		Y
+ScaleZ		Z
+ScaleNum	Number
+ScaleMes	"L=Select and scaling  Shift+L=Add selection"
+
+RotTitle	Rotate
+RotHandle	Handle
+RotBall		Trackball
+RotScreen	Screen
+RotX		"X-axis"
+RotY		"Y-axis"
+RotZ		"Z-axis"
+RotNum		Number
+RotMes		"L=Select and rotate  Shift+L=Add selection"
+
+LocalEditTitle	"Local axis"
+LocalEditShape	"Shape"
+LocalEditChild	"Children"
+LocalEditMove	"Move"
+LocalEditRotate	"Rotate"
+LocalEditScale	"Scaling"
+LocalEditCenter	"Centering"
+LocalEditProp	"Property"
+LocalMoveMes	"L=Move"
+LocalRotMes	"L=Rotate"
+LocalScaleMes	"L=Scale  Shift+L=Scale proportionally"
+
+UVTitle		"UV Edit"
+UVVertex	"Vert"
+UVFace		"Face"
+UVApex		"Apex"
+UVSelect	"Select"
+UVMove		"Move"
+UVRotate	"Rotate"
+UVScale		"Scale"
+UVFlat		"Flat"
+UVCylinder	"Cylindical"
+UVSphere	"Spherical"
+UVNormalize	"Normalize"
+UVUnify		"Unify"
+UVSeparate	"Separate"
+UVProject	"Project"
+UVAlign		"Align"
+UVCopy		"Copy"
+UVPaste		"Paste"
+UVSwitch	"SW Rotate"
+UVInvert	"SW Invert"
+UVAtlas		"Atlas"
+UVOutputFile	"Export"
+UVConfig	"Config"
+UVEditMes	"L=Select and edit  Shift+L=Add selection"
+UVEditSelectMes	"Shift+L=Add selection (per face)  Ctrl+L=Remove selection (per face)"
+UVEditMoveMes	"L=Select/Move UV  Shift+L=Add selection  Ctrl+L=Remove selection  Ctrl+Shift+L=Select surface"
+UVEditRotateMes	"L=Rotate  Shift+L=Rotate 15 degrees  Ctrl+Shift+L=Select a surface"
+UVEditScaleMes	"L=Scale proportionally  Shift+L=Scale  Ctrl+Shift+L=Select a surface"
+UVEditHandleMes	"L=Edit a handle"
+UVOutputFail	"Failed to export a file.\nMake sure a extension."
+
+MapTitle Mapping
+MapSel "Select face"
+MapMove Move
+MapRotate Rotate
+MapScale Scale
+MapInvertU InvU
+MapInvertV InvV
+MapFitSel "Fit selected"
+MapFitObj "Fit CurObj"
+MapProp Property
+MapOK OK
+MapRealtime Realtime
+MapSelMes "L=Select  Shift+L=Add selection"
+MapMoveMes "L=Move"
+MapRotMes "L=Rotate"
+MapScaleMes "L=Scaling  Shift+L=Proportionally"
+Mapping Mapping
+MapLoseUV "Are you sure to lose UV coordinates?"
+
+PrimTitle	Primitive
+PrimPreview	Preview
+PrimProp	Property
+PrimCreate	Create
+PrimMes		"L=Put primitive"
+
+CreateTitle	"Create Face"
+CreateFront	Front
+CreateBack	Back
+CreateBoth	Both
+CreateLine	Line
+CreateTri	Tri
+CreateFace	Face
+CreateUndo	Undo
+CreateAdd	Add
+CreateMes	"L=Add vertex  Ctrl+L=Snap to the nearest vertex"
+CreateMes12	"L=Add vertex  Ctrl+L=Snap to the nearest vertex  R=Cancel"
+CreateMes3	"L=Add vertex  Ctrl+L=Snap to the nearest vertex  R=Create a triangle"
+Create		Create
+CreateBadPt	"This point has already been selected."
+
+DelMes		"L=Delete faces"
+
+InvMes		"L=Invert faces"
+
+ExtrdTitle	Extrude
+ExtrdNormal	Normal
+ExtrdBevel	Bevel
+ExtrdMes	"L+left/right=Extrude face"
+
+MatMes		"L=Attach  Shift+L=Spoit"
+
+PullFaceMes	"L=Select lines"
+
+BevelTitle	Bevel
+BevelMes 	"L=Select lines"
+
+MagTitle	Magnet
+MagHandle	"Handle"
+MagSel		"Only selected"
+MagRange	"Range"
+MagDrag		"Set Range"
+MagDis		"Joined distance"
+MagMes		"L=Move vertices  Shift+L=Move vertical or horizontal  Ctrl+L=Move forward or backward"
+
+TwistTitle Twist
+TwistMes "L=Move axis"
+TwistAxis "Set Axis"
+TwistAxisMes "L=Move axis"
+TwistTwist Twist
+TwistTwistMes "L+left/right=Twist"
+TwistProp Property
+
+BendMes	"L=Drag to set the beginning and end point"
+BendReadyMes	"L=Move the point of edge, or drag the potision of nothing to bend  R=Clear the points"
+BendEdgeMes	"L=Move the point of edge"
+BendTargetMes	"L=Drag to bend"
+
+ShearMes	"L=Drag to set the beginning and end point"
+ShearReadyMes	"L=Move the point of edge, or drag the potision of nothing to shear  R=Clear the points"
+ShearEdgeMes	"L=Move the point of edge"
+ShearTargetMes	"L=Drag to shear"
+
+LatticeTitle 	Lattice
+LatticeBase		Base
+LatticeMove 	Move
+LatticeMoveMes 	"L=Move"
+LatticeScale 	Scale
+LatticeScaleMes "L+left/right=X L+up/down=Y L+R+left/right=Z Shift+L=Proportionally"
+LatticeModify 	Modify
+LatticeModifyMes	"L=Move vertices"
+LatticeFit	Fit
+LatticeProp 	Property
+
+WireTitle Wire
+WireCreate3Hint "Create a triangle"
+WireCreate3Mes "L=Determine the beginning of a wire"
+WireCreate3Mes2 "L=Determine the end of a wire"
+WireCreate3Mes2V "L=Determine the end of a wire  R=Snap at a vertex"
+WireCreate3Fail "Failed to create a triangle."
+WireDivQuadHint "Divide a quadrangle into two triangles"
+WireDivQuadMes "L=Determine the beggining of a wire"
+WireDivQuadMes2 "L=Determine the end of a wire"
+WireDivQuadFail "Failed to divide a quadrangle."
+WireDivLineHint "Insert a vertex in a line"
+WireSwap3Hint "Swap a line two triangles share"
+WireSwap3Mes "L=Click a line you want to swap"
+WireTo4Hint "Merge two triangles into a quadrangle"
+WireTo4Mes "L=Click a line you want to erase"
+
+KnifeTitle Knife
+KnifeKnife "Cut with a knife"
+KnifeKnifeHint ""
+KnifeKnifeMes "L=Determine the beginning point of wire"
+KnifeKnifeMes2 "L=Determine the end point of wire  Shift+L=Cut horizonally or vertically"
+KnifeKnifeMove "L=Release at the end point of wire"
+KnifeStraight "Cut straight faces"
+KnifeStraightHint ""
+KnifeStraightMes "L=Select a line to cut"
+KnifeStraightMes2 "L=Determine the end point of wire"
+KnifeChain "Erase chained lines"
+KnifeChainHint ""
+KnifeChainMes "L=Select a line to erase"
+KnifeFail "Failed to cut."
+
+WeitTitle Weight
+WeitMes "L=Select vertex"
+
+VColTitle 	"Vertex Color"
+VColVert	"Vertex"
+VColPoly	"Polygon"
+VColApex	"Apex"
+VColApply	"Apply to selected faces"
+VColIllum	"Illuminate"
+VColFilter	"Filter"
+VColMes 	"L=Paint  Shift+L=Syringe  Ctrl+L=Eraser"
+
+Blob Blob
+BlobTitle Blob
+BlobDel Delete
+BlobCopy Copy
+BlobMove Move
+BlobRot Rotate
+BlobScale Scale
+BlobProp Property
+BlobPoly Polygonise
+BlobConfig Config
+BlobPutMes "L=Put blob"
+BlobDelMes "L=Delete blob"
+BlobCopyMes "L=Copy blob"
+BlobMoveMes "L=Move blob"
+BlobRotMes "L=Rotate blob"
+BlobScaleMes "L+left/right=X  L+up/down=Y  R+left/right=Z"
+BlobPropMes "L=Select blob"
+BlobNoBlob "No blob exists."
+BlobFailPoly "Failed to polygonise blob."
+BlobSize0 "Cannot set zero size."
+BlobSphere Sphere
+BlobCylinder Cylinder
+BlobBox Box
+BlobTorus Torus
+BlobCone Cone
+BlobPyramid Pyramid
+BlobTube Tube
+BlobRoundBox "Round Box"
+BlobRoundCylinder "Round Cylinder"
+
+PaintMes "L=Paint  Shift+L=Spoit color"
+
+BkImgMes "L=Transform"
+BkImgMoveMes "L=Move  Shift+L=Move horizonally or vertically"
+BkImgEdgeMes "L=Resize"
+BkImgCornerMes "L=Resize  Shift+L=Resize proportionally"
+
+ViewTitle View
+ViewZoom Zoom
+ViewZoomMes "L+up/down=Zoom"
+ViewMove Move
+ViewMoveMes "L=Move"
+ViewRotate Rotate
+ViewRotateMes "L=Rotate  Shift+L=Rotate slowly"
+ViewPers Perspective
+ViewPersMes "L+up/down=Change perspective"
+ViewDolly Dolly
+ViewDollyMes "L+up/down=Dolly"
+
+PasteIncompatible	"Clipboard data isn't compatible with this version of Metasequoia."
+NoHidedFace "No hidden face exists."
+NoSelV "No selected vertex exists."
+NoSelVF "No selected vertex and face exist."
+No2VObj "Two vertices aren't selected in the object."
+MUnhide "Show hidden faces"
+MFix "Fix"
+MUnfix "Unfix"
+NoFixVF	"No fixed faces or vertices."
+MergeFace3NoPair	"Must be selected two close triangles."
+MergeFace3	"Merge two triangles"
+NoPairSymmetryVert	"Must be selected two vertices put among YZ plane."
+SymmetryVert	"Symmetry"
+JoinVertex	"Join vertices"
+
+ShiftPos	"Shift Position"
+AlignVertex	"Align Vertices"
+AlignVertNoAxis	"No axis is selected."
+JoinClosed	"Join Closed Vertices"
+JoinClosedResult "%1 vertices have been joined."
+JoinClosedFail	"No vertex has been joined."
+Freeze		"Freeze"
+FreezeFail	"%1 isn't attached any attributes to freeze."
+ReducePoly	"Reduce Polygons"
+ReducePoly4V	"More than four vertices must exist."
+AlignFace	"Align faces"
+AlignFaceResult	"%1 faces were inverted."
+AlignFaceFail	"Faces in current object have aligned already."
+PiledFace	"Delete overlapped faces"
+PiledFaceResult	"%1 faces were deleted."
+PiledFaceFail	"No overlapped faces in current object."
+UnifyFace	"Unify Faces"
+UnifyFaceResult	"%1 faces were deleted."
+UnifyFaceFail	"No both sides of face exists in current object."
+AttachMat	"Attach to face attached no material"
+AttachMatFail	"All faces in current object are attached materials."
+Regist	"Registering"
+RegAdmin	"You must login as 'Administrator' to register.\nAre you sure to login as 'Administrator'?"
+RegConfirm	"Has a serial-ID already been gotten?\nYou have to send money to get a serial-ID if you don't get a serial-ID,\n so push [Cancel] button and go to homemage.\nIf you have a serial-ID, push [OK] button."
+RegComp		"Complete registering."
+RegFail		"Incorrect serial-ID or password."
+RegClear 	"Are you sure to clear the registration information?"
+RegClearFail	"Cannot clear the registration information.\nIf an Administrator input a serial-ID, a normal User cannot clear it."
+
+PaintPanel "Paint Panel"
+MapSave	"Mapping bitmaps have changed.\nDo you want to save changes?"
+NoMapping1 "No mapping in current material."
+NoMapping2 ""
+PaintBegin "Are you sure to begin drawing?"
+MapReadOnly "Read-only mapping file exists.\nAre you sure to continue"
+MapReload "Are you sure to reload mappings?"
+MapFailCopy "Failed to copy mapping bitmaps to clipboard."
+MapFailPaste "Failed to paste mapping bitmaps from clipboard."
+MapUnifySize "Several sizes of mapping bitmaps exist.\nAre you sure to unify size?"
+MapChgedSize "Sizes of mapping bitmaps are changed.\nAre you sure to continue?"
+MapFSTex "Failed to save texture mapping."
+MapFSAlpha "Failed to save alpha mapping."
+MapFSBump "Failed to save bump mapping."
+
+ColorPalette	"Color Palette"
+ColPalLoadFail "Failed to load the file of color palette."
+ColPalSaveFail "Failed to save the file of color palette."
+
+KeyNone	"None"
+KeyHenkan "Henkan (Japanese)"
+KeyMuhenkan	"Muhenkan (Japanese)"
+KeySpace "Space"
+KeyKana	"Kana (Japanese)
+KeyZenkaku "Zenkaku/Hankaku (Japanese)"
+
+KeyListMenuFile	"Menu|File"
+KeyListMenuEdit	"Menu|Edit"
+KeyListMenuAttr	"Menu|Attribute"
+KeyListMenuSelect	"Menu|Selected"
+KeyListMenuObject	"Menu|Object"
+KeyListMenuView	"Menu|View"
+KeyListMenuPanel	"Menu|Panel"
+KeyListMenuHelp	"Menu|Help"
+KeyListPanelCommand	"Command panel|Command"
+KeyListPanelOption	"Command panel|Edit option"
+KeyListPanelView	"Command panel|View"
+KeyListCommandSelect	"[Select] command"
+KeyListCommandLocal	"[Local] command"
+KeyListCommandUVEdit	"[UV Edit] command"
+KeyListCommandKnife	"[Knife] command"
+KeyListCommandWire	"[Wire] command"
+KeyListCommandView	"[View] command"
+KeyListViewPers	"3D View|Perspective"
+KeyListViewTop	"3D View|Top"
+KeyListViewFront	"3D View|Front"
+KeyListViewLeft	"3D View|Left"
+KeyListObjectPanel	"Object panel"
+KeyListMaterialPanel	"Material panel"
+
+ComSelect	"Select"
+ComRect	"Rect"
+ComRope	"Rope"
+ComMove	"Move"
+ComScale	"Scale"
+ComRotate	"Rotate"
+ComLocalEdit	"Local"
+ComUVEdit	"UV edit"
+ComMapping	"Mapping"
+ComCreate	"Create"
+ComDelete	"Delete"
+ComInvert	"Invert"
+ComExtrude	"Extrude"
+ComMaterial	"Material"
+ComPullFace	"Pull face"
+ComMagnet	"Magnet"
+ComWire	"Wire"
+ComWeight	"Weight"
+ComPaint	"Paint"
+ComBlob	"Blob"
+ComVertexColor	"Vertex color"
+ComPrimitive	"Primitive"
+ComView	"View"
+ComKnife	"Knife"
+ComBackImage	"Background image"
+ComTwist	"Twist"
+ComLattice	"Lattice"
+ComBevel	"Bevel"
+ComBend	"Bend"
+ComShear	"Shear"
+ComSelect_Normal	"Normal"
+ComSelect_Joined	"Joined face"
+ComSelect_Belt	"Belt"
+ComSelect_Current	"Select a current object"
+ComSelect_Brush	"Brush"
+ComWire_Create3	"Create a triangle"
+ComWire_To3	"Divide a quadrangle into two triangles"
+ComWire_DivideLine	"Insert a vertex in a line"
+ComWire_Swap3	"Swap a line two triangles share"
+ComWire_To4	"Merge two triangles into a quadrangle"
+ComKnife_Knife	"Cut with a knife"
+ComKnife_DivideBelt	"Cut straight faces"
+ComKnife_JoinBelt	"Erase chained lines"
+ComViewZoom	"Zoom"
+ComViewMove	"Move"
+ComViewRotate	"Rotate"
+ComViewPers	"Perspective"
+ComViewDolly	"Dolly"
+ComLocalEditMove	"Move"
+ComLocalEditRotate	"Rotate"
+ComLocalEditScale	"Scale"
+ComUVEditVertex	"Vertex"
+ComUVEditFace	"Face"
+ComUVEditApex	"Apex"
+ComUVEditSelect	"Select"
+ComUVEditMove	"Move"
+ComUVEditRotate	"Rotate"
+ComUVEditScale	"Scale"
+ComUVEditFlat	"Flat mapping"
+ComUVEditCylinder	"Cylindical mapping"
+ComUVEditSphere	"Spherical mapping"
+ComUVEditNormalize	"Normalize"
+ComUVEditUnify	"Unify"
+ComUVEditSeparate	"Separate"
+ComUVEditProjection	"Projection"
+ComUVEditAlign	"Align"
+ComUVEditCopy	"Copy"
+ComUVEditPaste	"Paste"
+ComUVEditSwitch	"SW Rotate"
+ComUVEditInvert	"SW Invert"
+ComUVEditAtlas	"Atlas"
+ComUVEditOutputFile	"Export"
+ComUVEditConfig	"Config"
+
+EditSnapX	"X"
+EditSnapY	"Y"
+EditSnapZ	"Z"
+EditSnapL	"L"
+EditSnapW	"W"
+EditSnapS	"S"
+EditPoint	"Point"
+EditLine	"Line"
+EditFace	"Face"
+EditRect	"Rect"
+EditRope	"Rope"
+EditCurObj	"Current Object"
+EditGrid	"GRID"
+EditSymmetry	"Symmetry"
+
+ViewPersRender	"Renderer for perspective"
+ViewMeshYZ	"YZ mesh on perspective"
+ViewMeshZX	"ZX mesh on perspective"
+ViewMeshXY	"XY mesh on perspective"
+ViewAxis	"Axis on perspective"
+ViewMesh3	"Meshes on three views"
+View3View	"Renderer on three views"
+
+ViewPersLabel	"Label for perspective view"
+ViewPersPoint	"Pt (Point)"
+ViewPersLine	"Ln (Line)"
+ViewPersFace	"Fc (Face)"
+ViewPersSimple	"Si (Simple)"
+ViewPersFront	"Fr (Front)"
+ViewPersBkImg	"Img (Background image)"
+ViewTopLabel	"Label for top view"
+ViewTopPoint	"Pt (Point)"
+ViewTopLine	"Ln (Line)"
+ViewTopFace	"Fc (Face)"
+ViewTopSimple	"Si (Simple)"
+ViewTopFront	"Fr (Front)"
+ViewTopBkImg	"Img (Background image)"
+ViewFrontLabel	"Label for front view"
+ViewFrontPoint	"Pt (Point)"
+ViewFrontLine	"Ln (Line)"
+ViewFrontFace	"Fc (Face)"
+ViewFrontSimple	"Si (Simple)"
+ViewFrontFront	"Fr (Front)"
+ViewFrontBkImg	"Img (Background image)"
+ViewLeftLabel	"Label for left view"
+ViewLeftPoint	"Pt (Point)"
+ViewLeftLine	"Ln (Line)"
+ViewLeftFace	"Fc (Face)"
+ViewLeftSimple	"Si (Simple)"
+ViewLeftFront	"Fr (Front)"
+ViewLeftBkImg	"Img (Background image)"
+
+ObjPanelCreate	"New"
+ObjPanelDelete	"Delete"
+ObjPanelProperty	"Prop"
+ObjPanelClone	"Clone"
+ObjPanelOtherHide	"Show only current"
+ObjPanelAllShow	"Show all"
+ObjPanelOtherLock	"Lock non-current"
+ObjPanelUnlock	"Unlock all"
+ObjPanelMergeAll	"Merge all"
+ObjPanelMergeAllVisible	"Merge all visible"
+ObjPanelSelectCurrent	"Select vertices/faces"
+ObjPanelUnselectCurrent	"Unselect vertices/faces"
+ObjPanelShowColor	"Show color"
+ObjPanelShowFolding	"Show folder"
+ObjPanelEditChild	"Edit also children"
+
+MatPanelCreate	"New"
+MatPanelDelete	"Delete"
+MatPanelProperty	"Prop"
+MatPanelClone	"Clone"
+MatPanelDeleteUnused	"Delete unused materials"
+MatPanelDeleteAll	"Delete all"
+MatPanelLoad	"Load from file"
+MatPanelSave	"Save to file"
+MatPanelSetDefault	"Set as default"
+MatPanelSelectCurrent	"Select vertices/faces"
+MatPanelUnselectCurrent	"Unselect vertices/faces"

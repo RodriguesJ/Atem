@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MQPythonClass.xsl"?>
+<doc>
+ <class>MQColor</class>
+ <message lang="en">RGB color.</message>
+ <message lang="ja">RGB成分で示される色情報です。</message>
+ <properties>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>red</name>
+   <message lang="en">red value [0:1]</message>
+   <message lang="ja">赤 [0:1]</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>green</name>
+   <message lang="en">green</message>
+   <message lang="ja">緑 [0:1]</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>blue</name>
+   <message lang="en">blue value</message>
+   <message lang="ja">青 [0:1]</message>
+  </property>
+ </properties>
+</doc>

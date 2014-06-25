@@ -1,0 +1,146 @@
+<PACKET>
+        <GAME_PACKET OPCODE = "24" CLASS_NAME = "com.netty.net.packet.impl.FlashTabPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "27" CLASS_NAME = "com.netty.net.packet.impl.EnterAmountPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "34" CLASS_NAME = "com.netty.net.packet.impl.WriteInventoryItemsPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "35" CLASS_NAME = "com.netty.net.packet.impl.ShakeScreenPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "36" CLASS_NAME = "com.netty.net.packet.impl.ButtonStatesPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "50" CLASS_NAME = "com.netty.net.packet.impl.PrivateMessageInformationPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "53" CLASS_NAME = "com.netty.net.packet.impl.ItemImagesOnInterfacePacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "61" CLASS_NAME = "com.netty.net.packet.impl.ResetHeadIconsPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "65" CLASS_NAME = "com.netty.net.packet.impl.NPCUpdatingPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "68" CLASS_NAME = "com.netty.net.packet.impl.SplitPrivateChatOffPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "70" CLASS_NAME = "com.netty.net.packet.impl.SpecialBarPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "71" CLASS_NAME = "com.netty.net.packet.impl.TabInterfacesPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "73" CLASS_NAME = "com.netty.net.packet.impl.MapRegionPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "75" CLASS_NAME = "com.netty.net.packet.impl.NPCChatPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "78" CLASS_NAME = "com.netty.net.packet.impl.RemoveFlagPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "81" CLASS_NAME = "com.netty.net.packet.impl.UpdatePlayerPacketHandler">
+                <FIELD TYPE = "STRING">FRIENDS_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "85" CLASS_NAME = "com.netty.net.packet.impl.NextGraphicLocationPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "87" CLASS_NAME = "com.netty.net.packet.impl.AdjustVolumePacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "99" CLASS_NAME = "com.netty.net.packet.impl.MiniMapStatePacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "104" CLASS_NAME = "com.netty.net.packet.impl.MenuOptionsPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "106" CLASS_NAME = "com.netty.net.packet.impl.SetCurrentTabPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "107" CLASS_NAME = "com.netty.net.packet.impl.ResetCameraPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "109" CLASS_NAME = "com.netty.net.packet.impl.LogoutPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "110" CLASS_NAME = "com.netty.net.packet.impl.EnergyPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "114" CLASS_NAME = "com.netty.net.packet.impl.ServerUpdatePacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "121" CLASS_NAME = "com.netty.net.packet.impl.SetMusicPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "126" CLASS_NAME = "com.netty.net.packet.impl.TextLinesInterfacePacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "134" CLASS_NAME = "com.netty.net.packet.impl.SkillsPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "142" CLASS_NAME = "com.netty.net.packet.impl.InterfaceOverInventoryPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "164" CLASS_NAME = "com.netty.net.packet.impl.InterfaceOverChatPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "166" CLASS_NAME = "com.netty.net.packet.impl.ToggleCameraPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "171" CLASS_NAME = "com.netty.net.packet.impl.AddSpecialBarInterfacePacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "174" CLASS_NAME = "com.netty.net.packet.impl.PlaySoundPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "176" CLASS_NAME = "com.netty.net.packet.impl.WelcomeScreenPacketHandler">
+                <FIELD TYPE = "STRING">FRIENDS_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "177" CLASS_NAME = "com.netty.net.packet.impl.ToggleCameraViewPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "187" CLASS_NAME = "com.netty.net.packet.impl.EnterUserNamePacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "196" CLASS_NAME = "com.netty.net.packet.impl.PrivateMessagePacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "206" CLASS_NAME = "com.netty.net.packet.impl.ChatButtonsPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "208" CLASS_NAME = "com.netty.net.packet.impl.InterfaceWalkPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "214" CLASS_NAME = "com.netty.net.packet.impl.IgnoreListPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "218" CLASS_NAME = "com.netty.net.packet.impl.InterfaceOverChatPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "219" CLASS_NAME = "com.netty.net.packet.impl.CloseInterfacesPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "221" CLASS_NAME = "com.netty.net.packet.impl.PrivateMessageStatusPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "240" CLASS_NAME = "com.netty.net.packet.impl.WeightPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "246" CLASS_NAME = "com.netty.net.packet.impl.MoveItemImagesInterfacePacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "248" CLASS_NAME = "com.netty.net.packet.impl.InterfaceInventoryOverlayPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "249" CLASS_NAME = "com.netty.net.packet.impl.PlayerInformationPacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+        <GAME_PACKET OPCODE = "253" CLASS_NAME = "com.netty.net.packet.impl.ChatMessagePacketHandler">
+                <FIELD TYPE = "STRING">IGNORES_NAME</FIELD>
+        </GAME_PACKET>
+</PACKET>

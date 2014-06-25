@@ -1,0 +1,4 @@
+1. Let all events, actions, tasks (SQL), and what not implement/extend Runnable/Thread
+ for Thread Pooling?
+
+2. Events for actions?

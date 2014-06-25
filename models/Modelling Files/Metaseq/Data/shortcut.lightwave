@@ -1,0 +1,57 @@
+A	
+B	
+C	
+D	
+E	
+F	MenuInvert
+G	
+H	
+I	
+J	
+K	ComDelete
+L	MenuOpen
+M	
+N	
+O	
+P	ComCreate
+Q	MenuFaceMaterial
+R	
+S	MenuSave
+T	ComMove
+U	MenuUndo
+V	
+W	
+X	
+Y	ComRotate
+Z	
+
+A s	MenuFitView
+F s	MenuPushFace
+H s	ComScale
+I s	MenuUnifyFace
+K s	ComKnife_Knife
+N s	MenuNew
+S s	MenuSaveAs
+T s	MenuTriangulate
+U s	MenuRedo
+V s	MenuMirrorFace
+X s	MenuPrimitive
+
+D c	MenuFreeze
+V c	MenuShiftPos
+W c	MenuJoinVertex
+Z c	ComViewZoom
+
+046	MenuDelete
+0186	ComMagnet
+
+End
+
+
+＃ショートカットのカスタマイズについて
+　このファイルを"shortcut.dat"として保存すると、LightWave3D 5.6と同じ
+様なショートカットが使える・・・のですが、LightWaveにしかない機能も多
+いので、効かないキーも多いです。MdNに載ってたショートカット一覧を参考
+にしただけで、LightWaveで機能を確認したわけじゃないので、若干意味を勘
+違いしてる部分があるかも。
+　Tabでの曲面表示の切り替えもシステムの制約上今のところ無理。

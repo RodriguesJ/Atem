@@ -1,0 +1,194 @@
+A	ComViewRotate
+B	ComMagnet
+C	ComRotate
+D	ComDelete
+E	ComExtrude
+F	ComCreate
+G	ComRope
+H	ComPullFace
+I	ComInvert
+J
+K	ComKnife
+L
+M	ComMaterial
+N
+O
+P	ComPrimitive
+Q	ComScale
+R	ComRect
+S	ComSelect
+T	
+U	ComUVEdit
+V	ComMove
+W	ComWire
+X	ComViewMove
+Y	
+Z	ComViewZoom
+
+A c	MenuSelectAll
+B c	MenuSelObjAll
+C c	MenuCopy
+D c	MenuUnselectAll
+E c	MenuPushFace
+F c	MenuFitView
+G c	MenuShowHided
+H c	MenuHide
+H c s	MenuHideUnsel
+I c	MenuInsert
+J c	MenuJoinVertex
+K c	
+L c	
+M c	MenuMaterialPanel
+N c	MenuNew
+O c	MenuOpen
+P c	MenuPaintPanel
+Q c	MenuObjectPanel
+R c	MenuSymmetryVertex
+H c s	MenuRendering
+S c	MenuSave
+T c	
+U c	
+V c	MenuPaste
+W c	MenuRotateCenter
+X c	MenuCut
+Y c	MenuRedo
+Z c	MenuUndo
+
+032	MenuLockSelect
+046	MenuDelete
+
+End
+
+
+＃ショートカットのカスタマイズについて
+　ショートカットのカスタマイズは[環境設定]-[ショットカットキーの設
+定]から変更可能ですが、テキストエディタで直接内容を書き換えること
+でも変更することもできます。
+　このファイルまたは他の"shortcut.～"を複製して、"shortcut.dat"と
+いうファイルを作成し、そのファイルの内容を変更するとショートカット
+のカスタマイズができます。ただし、下手に変更して動作がおかしくなっ
+ても保証は持てません。
+　下にメニューやボタンの対応を記すので、どれがどれに当たるかはレイ
+アウトの順番通りなので自分で考えて下さい。
+
+[コマンドパネル|コマンド]
+ComSelect,ComRect,ComRope,ComMove,ComScale,ComRotate,ComLocalEdit
+ComUVEdit,ComMapping,
+ComPrimitive,ComCreate,ComDelete,ComInvert,ComExtrude,ComMaterial,
+ComPullFace,ComBevel,ComMagnet,ComTwist,ComBend,ComShear,ComLattice,
+ComWire,ComKnife,ComWeight,ComVertexColor,
+ComBlob,ComPaint,ComBkImg,ComView,
+[選択コマンド]
+ComSelect_Normal,ComSelect_Joined,ComSelect_Belt,
+[ワイヤーコマンド]
+ComWire_Create3,ComWire_To3,ComWire_DivideLine,ComWire_Swap3,
+ComWire_To4,
+[ナイフコマンド]
+ComWire_DivideBelt,ComWire_Knife,ComWire_JoinBelt,
+[視点コマンド]
+ComViewZoom,ComViewMove,ComViewRotate,ComViewPers,ComViewDolly
+[コマンドパネル|編集オプション]
+EditSnapX,EditSnapY,EditSnapZ,EditSnapW,EditSnapS,EditPoint,
+EditLine,EditFace,EditRect,EditRope,EditCurObj,EditGrid,
+EditSymmetry,
+[コマンドパネル|表示]
+ViewGDI,ViewMQR,ViewD3D,ViewGL,ViewMeshYZ,ViewMeshZX,ViewMeshXY,
+ViewAxis,
+View3View,ViewMesh3,
+[３Ｄ画面|透視図]
+ViewPersLabel,ViewPersPoint,ViewPersLine,ViewPersFace,ViewPersSimple,
+ViewPersFront,ViewPersImage
+[３Ｄ画面|上面図]
+ViewTopLabel,ViewTopPoint,ViewTopLine,ViewTopFace,ViewTopSimple,
+ViewTopFront,ViewTopImage
+[３Ｄ画面|前面図]
+ViewFrontLabel,ViewFrontPoint,ViewFrontLine,ViewFrontFace,ViewFrontSimple,
+ViewFrontFront,ViewFrontImage
+[３Ｄ画面|側面図]
+ViewLeftLabel,ViewLeftPoint,ViewLeftLine,ViewLeftFace,ViewLeftSimple,
+ViewLeftFront,ViewLeftImage
+[メニュー|ファイル]
+MenuNew,MenuOpen,MenuSave,MenuSaveIncerment,MenuSaveAs,MenuInsert,
+MenuRendering,MenuExportDoga,MenuConfig,MenuBasicMode,MenuExit,
+[メニュー|編集]
+MenuUndo,MenuRedo,MenuSelectAll,MenuSelectVertexInvert,
+MenuSelectFaceInvert,MenuUnselectAll,MenuSelObjAll,
+MenuSelObjVertexInvert,MenuSelObjFaceInvert,MenuUnselObjAll,
+MenuSelMatAll,MenuUnselMatAll,MenuLockSelect
+[メニュー|選択部属性]
+MenuHide,MenuHideUnsel,MenuShowHided,MenuFix,MenuUnfix,MenuFixSelect,
+MenuStoreSelect1,MenuStoreSelect2,MenuStoreSelect3,MenuStoreSelect4,
+MenuRestoreSelect1,MenuRestoreSelect2,MenuRestoreSelect3,
+MenuRestoreSelect4,MenuRotateCenter,MenuFitView,
+[メニュー|選択部処理]
+MenuCut,MenuCopy,MenuPaste,MenuDelete,MenuInvertFace,MenuDoubleSideFace,
+MenuFaceMaterial,MenuPushFace,MenuMirrorFace,MenuFaceToNewObj,
+MenuMergeFace3,MenuTriangulateSelected,MenuSymmetryVertex,MenuJoinVertex,
+MenuAlignVertex,MenuFlatten,MenuRound,
+[メニュー|オブジェクト]
+MenuFreeze,MenuShiftPos,MenuJoinNear,MenuReducePolygon,MenuMeshSmooth,
+MenuAlignFace,MenuDeletePiledFace,MenuUnifyFace,MenuNoMatFace,
+[メニュー|表示]
+MenuDocInfo,MenuSetView,MenuGrid,MenuSetBkImage,MenuPreciseView,
+MenuShowTexture,MenuSmooth,MenuFaceCurrent,MenuLineUncurrent,
+MenuLineUncurrentNormal,MenuLineUncurrentDark,MenuLineUncurrentHidden,
+MenuShowSelect,MenuOverwriteFace,
+[メニュー|パネル]
+MenuPaintPanel,MenuScriptEditor,MenuObjectPanel,MenuMaterialPanel,
+MenuEditPanel,MenuCommandPanel
+[メニュー|ヘルプ]
+MenuHelpIndex,MenuAbout,MenuPlugIn,MenuDebug,MenuBenchmark,
+MenuHomepage,MenuUpdateCheck,MenuRegister
+
+＃オプションキー
+s    Shift
+c    Ctrl
+a    Alt
+p    プラグインへの割り当て（後述参照）
+
+＃キーコード(すべてのキーが正しく使えるかどうかは未確認)
+08   後退 前進 (PC-98:BS)
+09   Tab (メニューにのみ適用可)
+019  Pause Break
+027  Esc
+028  変換(次候補) 前候補 (PC-98:XFER)
+029  無変換 (PC-98:NFER)
+032  Space
+033  PageUp (PC-98:ROLL UP)
+034  PageDown (PC-98:ROLL DOWN)
+035  End (PC-98:HELP)
+036  Home (PC-98:HOME CLR)
+045  Insert (PC-98:INS)
+046  Delete (PC-98:DEL)
+0106 NumPad *
+0107 NumPad +
+0111 NumPad /
+0120 F9
+0122 F11 (PC-98:vf1)
+0123 F12 (PC-98:vf2)
+0144 NumLock
+0145 ScrollLock
+0186 :
+0187 ;
+0188 ,
+0190 .
+0191 /
+0192 @
+0219 [
+0220 \
+0221 ]
+0222 ^
+0226 Back Slash
+0240 Caps Lock
+0242 ひらがな カタカナ
+0244 全角 半角
+
+＃プラグインへの割り当て
+　プラグインへの割り当てはオプションとして'p'を付けた後、
+ProductID、PluginID、Indexの順で記載してください。ProductID、
+PluginID、Indexはメニュー[ヘルプ][プラグインについて]で調べる
+ことができます。
+
+例：[Create text]プラグインにCtrl+Shift+Tを割り当てる
+T c s p 56a31d20 5eac34e0 0
+

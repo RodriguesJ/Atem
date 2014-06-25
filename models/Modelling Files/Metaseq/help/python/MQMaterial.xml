@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MQPythonClass.xsl"?>
+<doc>
+ <class>MQMaterial</class>
+ <message lang="en">MQMaterial has a colorizng information such as shading or a texture mapping.</message>
+ <message lang="ja">ポリゴン表面に色付けを行うための材質情報を保持します。</message>
+ <properties>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>string</type>
+   <name>name</name>
+   <message lang="en">material's name</message>
+   <message lang="ja">マテリアル名</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type>long</type>
+   <name>id</name>
+   <message lang="en">unique ID of material</message>
+   <message lang="ja">マテリアルを識別するユニークID</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>MQColor</type>
+   <name>color</name>
+   <message lang="en">base color</message>
+   <message lang="ja">基本色</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>alpha</name>
+   <message lang="en">alpha value</message>
+   <message lang="ja">不透明度</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>diffuse</name>
+   <message lang="en">diffuse</message>
+   <message lang="ja">拡散光</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>ambient</name>
+   <message lang="en">ambient</message>
+   <message lang="ja">環境光</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>emissive</name>
+   <message lang="en">emissive</message>
+   <message lang="ja">発光</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>specular</name>
+   <message lang="en">specular</message>
+   <message lang="ja">反射光</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>float</type>
+   <name>power</name>
+   <message lang="en">power of specular</message>
+   <message lang="ja">反射強度</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>shader</name>
+   <message lang="en">shader type</message>
+   <message lang="ja">シェーダの種類</message>
+   <values>
+    <value value="0">
+     <message lang="en">Classic</message>
+     <message lang="ja">Classic</message>
+    </value>
+    <value value="1">
+     <message lang="en">Constant</message>
+     <message lang="ja">Constant</message>
+    </value>
+    <value value="2">
+     <message lang="en">Lambert</message>
+     <message lang="ja">Lambert</message>
+    </value>
+    <value value="3">
+     <message lang="en">Phong</message>
+     <message lang="ja">Phong</message>
+    </value>
+    <value value="4">
+     <message lang="en">Blinn</message>
+     <message lang="ja">Blinn</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type>string</type>
+   <name>shaderName</name>
+   <message lang="en">shader's name</message>
+   <message lang="ja">シェーダ名（shaderを文字列として取得）</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>vertexColor</name>
+   <message lang="en">vertex color</message>
+   <message lang="ja">頂点カラー</message>
+   <values>
+    <value value="0">
+     <message lang="en">None</message>
+     <message lang="ja">なし</message>
+    </value>
+    <value value="1">
+     <message lang="en">Enable</message>
+     <message lang="ja">基本色に適用</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>mapType</name>
+   <message lang="en">mapping type</message>
+   <message lang="ja">マッピングの投影方式</message>
+   <values>
+    <value value="0">
+     <message lang="en">UV mapping</message>
+     <message lang="ja">UVマッピング</message>
+    </value>
+    <value value="1">
+     <message lang="en">Flat mapping</message>
+     <message lang="ja">平面マッピング</message>
+    </value>
+    <value value="2">
+     <message lang="en">Cylinder mapping</message>
+     <message lang="ja">円筒マッピング</message>
+    </value>
+    <value value="3">
+     <message lang="en">Sphere mapping</message>
+     <message lang="ja">球マッピング</message>
+    </value>
+   </values>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>MQPoint</type>
+   <name>mapScaling</name>
+   <message lang="en">mapping scaling</message>
+   <message lang="ja">マッピングの投影スケーリング</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>MQAngle</type>
+   <name>mapAngle</name>
+   <message lang="en">mapping angle</message>
+   <message lang="ja">マッピングの投影角度</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>MQPoint</type>
+   <name>mapPosition</name>
+   <message lang="en">mapping position</message>
+   <message lang="ja">マッピングの投影位置</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>string</type>
+   <name>textureMap</name>
+   <message lang="en">filename of texture mapping</message>
+   <message lang="ja">テクスチャマッピングのファイル名</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>string</type>
+   <name>alphaMap</name>
+   <message lang="en">filename of alpha mapping</message>
+   <message lang="ja">アルファマッピングのファイル名</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>string</type>
+   <name>bumpMap</name>
+   <message lang="en">filename of bump mapping</message>
+   <message lang="ja">バンプマッピングのファイル名</message>
+  </property>
+ </properties>
+ <methods>
+  <!--
+  <method>
+   <name>getColor</name>
+   <message lang="en">Get a base color.</message>
+   <message lang="ja">基本色を取得します。</message>
+   <return>
+    <type>MQColor</type>
+    <message lang="en">base color</message>
+    <message lang="ja">基本色</message>
+   </return>
+  </method>
+  <method>
+   <name>setColor</name>
+   <message lang="en">Set a base color.</message>
+   <message lang="ja">基本色を設定します。</message>
+   <args>
+    <arg>
+     <name>color</name>
+     <type>MQColor</type>
+     <message lang="en">base color</message>
+     <message lang="ja">基本色</message>
+    </arg>
+   </args>
+  </method>
+  -->
+  <method>
+   <name>getTextureMapPath</name>
+   <message lang="en">Get a path of the texture mapping file.</message>
+   <message lang="ja">テクスチャマッピングのファイル名を絶対パスとして取得します。</message>
+   <return>
+    <type>string</type>
+    <message lang="en">path of texture mapping file</message>
+    <message lang="ja">テクスチャマッピングのファイルパス</message>
+    <values>
+     <value value="None">
+      <message lang="en">Invalid path</message>
+      <message lang="ja">有効なファイルパスでない</message>
+     </value>
+    </values>
+   </return>
+   <attention lang="en">The material that isn't added to a document returns 'None' always.</attention>
+   <attention lang="ja">ドキュメントに登録されていないマテリアルは常にNoneを返します。</attention>
+  </method>
+  <method>
+   <name>getAlphaMapPath</name>
+   <message lang="en">Get a path of the alpha mapping file.</message>
+   <message lang="ja">アルファマッピングのファイル名を絶対パスとして取得します。</message>
+   <return>
+    <type>string</type>
+    <message lang="en">path of alpha mapping file</message>
+    <message lang="ja">アルファマッピングのファイルパス</message>
+    <values>
+     <value value="None">
+      <message lang="en">Invalid path</message>
+      <message lang="ja">有効なファイルパスでない</message>
+     </value>
+    </values>
+   </return>
+   <attention lang="en">The material that isn't added to a document returns 'None' always.</attention>
+   <attention lang="ja">ドキュメントに登録されていないマテリアルは常にNoneを返します。</attention>
+  </method>
+  <method>
+   <name>getBumpMapPath</name>
+   <message lang="en">Get a path of the bump mapping file.</message>
+   <message lang="ja">バンプマッピングのファイル名を絶対パスとして取得します。</message>
+   <return>
+    <type>string</type>
+    <message lang="en">path of bump mapping file</message>
+    <message lang="ja">バンプマッピングのファイルパス</message>
+    <values>
+     <value value="None">
+      <message lang="en">Invalid path</message>
+      <message lang="ja">有効なファイルパスでない</message>
+     </value>
+    </values>
+   </return>
+   <attention lang="en">The material that isn't added to a document returns 'None' always.</attention>
+   <attention lang="ja">ドキュメントに登録されていないマテリアルは常にNoneを返します。</attention>
+  </method>
+ </methods>
+</doc>

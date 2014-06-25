@@ -1,0 +1,175 @@
+Panels {
+	BtnCreate	"New"
+	BtnDelete	"Delete"
+	BtnProperty	"Prop"
+	BtnClone	"Clone"
+}
+
+ObjectPanel {
+	FormObjPanel	"Object Panel"
+	BtnCreate	"New"	"Create a new object"
+	BtnDelete	"Delete"	"Delete a current object"
+	BtnProperty	"Prop"	"Object property"
+	BtnClone	"Clone"	"Make a clone object"
+	BtnMisc	"Misc"
+}
+
+ObjectMisc {
+	MenuOtherHide	"Show only current"
+	MenuAllShow	"Show all"
+	MenuOtherLock	"Lock non-current"
+	MenuAllUnlock	"Unlock all"
+	MenuMergeAll	"Merge all"
+	MenuMergeAllVisible	"Merge all visible"
+	MenuSelectCurrent	"Select vertices/faces"
+	MenuUnselectCurrent	"Unselect vertices/faces"
+	MenuShowColor	"Show color"
+	MenuShowFolding	"Show folder"
+	MenuEditChild	"Edit also children"
+}
+
+ObjectMenu {
+	MenuPatchNone	"Patch none"
+	MenuPatchSpline1	"Patch spline 1"
+	MenuPatchSpline2	"Patch spline 2
+	MenuPatchCatmull	"Patch Catmull-Clark"
+	MenuMirrorNone	"Mirror none"
+	MenuMirror1	"Mirror separated"
+	MenuMirror2	"Mirror joined"
+	MenuShading	"Smooth shading"
+}
+
+Object {
+
+DlgObject	"Object Property"
+
+BtnOk	"OK"
+BtnCancel	"Cancel"
+BtnHelp	"Help"
+
+GroupName	"Object's name"
+
+GroupOption	"Option"
+CheckVisible	"Visible"
+CheckLocking	"Lock"
+LabelColor	"Color"
+
+GroupPatch	"Patch"
+RadioPatchNone	"Flat"
+RadioPatchSpline1	"Spline Type1"
+RadioPatchSpline2	"Spline Type2"
+LabelPatchSeg	"Segment"
+
+GroupMirror	"Mirroring"
+RadioMirrorNone	"None"
+RadioMirrorNormal	"Separated"
+RadioMirrorJoin	"Joined"
+CheckMirrorDis	"Restrict distance"
+LabelMirrorDis	"Distance"
+LabelMirrorAxis	"Axis"
+CheckMirrorLocal	"Local coordinate"
+
+GroupInfo	"Information"
+LabelVertex	"Vertices"
+LabelFace	"Faces"
+LabelFace2	"Lines"
+LabelFace3	"Triangles"
+LabelFace4	"Quads"
+LabelPatchFace	"Patches"
+
+GroupLathe	"Lathe"
+CheckLathe	"Apply lathe"
+LabelLathe	"Seg."
+
+GroupSmooth	"Smoothing"
+CheckSmooth	"Apply smoothing"
+LabelSmooth	"Angle"
+
+}
+
+MaterialPanel {
+	FormMatPanel	"Material Panel"
+	BtnCreate	"New"	"Create a new material"
+	BtnDelete	"Delete"	"Delete a current material"
+	BtnProperty	"Prop"	"Material property"
+	BtnClone	"Clone"	"Make a clone material"
+	BtnMisc	"Misc"
+}
+
+MaterialMisc {
+	MenuDeleteUnused	"Delete unused materials"
+	MenuDeleteAll	"Delete all"
+	MenuLoad	"Load from file"
+	MenuSave	"Save to file"
+	MenuSetDefault	"Set as default"
+	MenuSelectCurrent	"Select vertices/faces"
+	MenuUnselectCurrent	"Unselect vertices/faces"
+}
+
+Material {
+
+DlgMaterial	"Material Property"
+
+BtnOk	"OK"
+BtnCancel	"Cancel"
+BtnHelp	"Help"
+
+OpenBitmapDlg
+PanelButton
+GroupName	"Name"
+LabelName	"Name of material"
+LabelShader	"Shader"
+CheckVertexColor 	"Vertex Color"
+
+GroupMisc	"Misc"
+LabelAlpha	"alpha"
+LabelAmb	"ambient"
+LabelEmi	"emission"
+LabelDif	"diffuse"
+LabelSpcPower	"power"
+LabelSpc	"specular"
+
+GroupMapping	"Mapping"
+LabelMapProj 	"Projection Method"
+ComboMapProj	"UV" "Flat" "Cylindical" "Spherical"
+LabelTexture	"Texture"
+BtnLoadTexture	"Ref"
+LabelAlphaPlane	"Alpha"
+BtnLoadAlphaPlane	"Ref"
+LabelBump	"Bump"
+BtnLoadBump	"Ref"
+BtnViewTexture	"Show"
+BtnViewAlphaPlane	"Show"
+BtnViewBump	"Show"
+
+GroupColor	"Color"
+BtnColorLibrary	"Color library"
+ColorPanel	"Hue angle" "Saturation" "Value" "Red" "Green" "Blue"
+
+}
+
+Progress {
+	FormProgress	"Progress"
+}
+
+EditPanel {
+	FormEditPanel	"Edit Panel"
+}
+
+DebugWindow {
+	FormDebug	"Error Window"
+	BtnSave		"Save"
+	BtnSendMain	"Send"
+	MemoError	"Error occurred. Please save error information, and send it to the developer by e-mail." "And reboot Metasequoia because the operation may be unstable.
+}
+
+DebugWindowMenu {
+	MenuEdit	"Edit"
+	MenuMemory	"Memory status"
+	MenuSave	"Save to a file"
+	MenuClear	"Clear"
+}
+
+DebugSave {
+	"Text file (*.txt)|*.txt"
+}

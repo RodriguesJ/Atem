@@ -1,0 +1,177 @@
+IconFile "siobistyle.bmp"
+
+PanelCommand	0 0 120
+
+GroupSystem	3 * 114 46 Alias
+PanelFile	 	 2 16 17 33 Invisible
+
+BtnOpen			 6 18 24 24 Icon(251 60 22 22)
+BtnSave			30 18 24 24 Icon(278 60 22 22)
+BtnSaveAs		60 20 50 16 Invisible
+BtnInsert		60 36 50 16 Invisible
+BtnConfig		60 18 24 24 Icon(304 60 22 22)
+BtnDocInfo		84 18 24 24 Icon(330 60 22 22)
+
+BtnObjectPanel		 6 50 78 18 Invisible
+BtnObjectProperty	83 50 22 18 Invisible
+BtnMaterialPanel	 6 68 78 18 Invisible
+BtnMaterialProperty	83 68 22 18 Invisible
+
+
+
+
+
+GroupEdit	3 * 116 148 alias
+
+BtnUndo			 6 18 52 33 Icon(251 1 50 31)
+BtnRedo			58 18 52 33 Icon(303 1 50 31)
+
+BtnSelectAll		 6 57 26 24 Icon(251 34 24 22)
+BtnUnselectAll		32 57 26 24 Icon(277 34 24 22)
+BtnSelectCurObj 	58 57 26 24 Icon(303 34 24 22)
+BtnSelectCurMat		84 57 26 24 Icon(329 34 24 22)
+BtnHideFace		 6 81 26 24 Icon(251 85 24 22)
+BtnShowFace		32 81 26 24 Icon(277 85 24 22)
+BtnFix			58 81 26 24 Icon(303 85 24 22)
+BtnUnfix		84 81 26 24 Icon(329 85 24 22)
+
+TextStore		 6 110 39 16
+BtnStore1		45 110 17 17 Icon(141 197 15 15)
+BtnStore2		61 110 17 17 Icon(157 197 15 15)
+BtnStore3		77 110 17 17 Icon(173 197 15 15)
+BtnStore4		93 110 17 17 Icon(189 197 15 15)
+TextRestore		 6 127 39 16             
+BtnRestore1		45 127 17 17 Icon(205 197 15 15)
+BtnRestore2		61 127 17 17 Icon(221 197 15 15)
+BtnRestore3		77 127 17 17 Icon(237 197 15 15)
+BtnRestore4		93 127 17 17 Icon(253 197 15 15)
+
+
+
+
+
+GroupCommand	3 * 116 409 Alias
+
+PanelEdit	* * * * Invisible
+BtnComSelect		 7 20 34 34 Icon( 1 1 32 32)
+BtnComRect		41 20 34 34 Icon(35 1 32 32)
+BtnComRope		75 20 34 34 Icon(69 1 32 32)
+
+BtnComMove		 7 54 34 34 Icon( 1 35 32 32)
+BtnComScale		41 54 34 34 Icon(35 35 32 32)
+BtnComRotate		75 54 34 34 Icon(69 35 32 32)
+BtnComLocalEdit		12 88 92 20 Icon(6 188 90 18)
+
+PanelFace	* * * * Invisible
+BtnComPrimitive		 7 108 68 52 Icon(1 137 66 50)
+BtnComCreate		75 108 34 52 Icon(69 137 32 50)
+
+BtnComExtrude 		41 167 34 34 Icon( 1  69 32 32)
+BtnComPullFace		41 201 34 34 Icon( 1 103 32 32)
+BtnComBevel		 7 182 34 34 Icon(35  69 32 32)
+BtnComInvert		 7 216 34 34 Icon(35 103 32 32)
+BtnComKnife		75 182 34 34 Icon(69  69 32 32)
+BtnComWire		75 216 34 34 Icon(69 103 32 32)
+BtnComMaterial		41 235 34 34 Icon(103 103 32 32)
+
+BtnComBend		 6 275 26 34 Icon(141 36 24 32)
+BtnComShear		32 275 26 34 Icon(167 36 24 32)
+BtnComTwist		58 275 26 34 Icon(193 36 24 32)
+BtnComLattice		84 275 26 34 Icon(219 36 24 32)
+
+BtnComMapping		 6 313 40 24 Icon(141 99 38 22)
+BtnComUVEdit		46 313 64 24 Icon(179 99 62 22)
+
+PanelLine	* * * * Invisible
+BtnComDeleteFace	 6 342 26 34 Icon(141 1 24 32)
+BtnComMagnet		32 342 26 34 Icon(167 1 24 32)
+BtnComWeit		84 342 26 34 Icon(219 1 24 32)
+BtnComBlob		58 342 26 34 Icon(193 1 24 32)
+
+PanelMisc	* * * * Invisible
+BtnComVertexColor	 6 376 26 28 Icon(141 70 24 26)
+BtnComMapPaint		32 376 26 28 Icon(167 70 24 26)
+BtnComBackImage		58 376 26 28 Icon(193 70 24 26)
+BtnComView		84 376 26 28 Icon(219 70 24 26)
+
+
+
+
+
+GroupOption	3 * 114 112 Alias
+
+BtnSnapX		 7 18 20 20 Icon(141 151 18 18)
+BtnSnapY		27 18 20 20 Icon(161 151 18 18)
+BtnSnapZ		47 18 20 20 Icon(181 151 18 18)
+BtnSnapLocal		 7 41 20 20 Icon(121 151 18 18)
+BtnSnapWorld		27 41 20 20 Icon(201 151 18 18)
+BtnSnapScreen		47 41 20 20 Icon(221 151 18 18)
+
+BtnEditPoint		 7 64 20 20 Icon(141 131 18 18)
+BtnEditLine		27 64 20 20 Icon(161 131 18 18)
+BtnEditFace		47 64 20 20 Icon(181 131 18 18)
+BtnEditRect		 7 87 20 20 Icon(201 131 18 18)
+BtnEditRope		27 87 20 20 Icon(221 131 18 18)
+
+BtnEditCurObj 		77 18 31 20 Icon(141 171 29 18)
+BtnEditGrid		77 52 31 20 Icon(172 171 29 18)
+BtnEditSymmetry		77 87 31 20 Icon(210 171 29 18)
+
+
+
+
+
+
+GroupView	3 * 114 85 Alias
+
+PanelPers		 4 18 16 37
+BtnPersView		22 18 88 17 GradBtn
+BtnMeshYZ		22 39 22 16 Icon(251 153 20 14)
+BtnMeshZX		44 39 22 16 Icon(273 153 20 14)
+BtnMeshXY		66 39 22 16 Icon(295 153 20 14)
+BtnAxis			88 39 22 16 Icon(319 153 20 14)
+
+PanelThree		 4 62 16 17
+Btn3View		22 62 61 17 GradBtn
+BtnMesh3		88 62 22 17 Icon(319 173 20 15)
+
+
+
+
+
+
+GroupLight	3 * 114 145 Alias
+PaintLight		9 * * *
+CheckBackLight		37 * * *
+
+
+
+
+
+BtnPersPoint		 40 1 19 18 Icon(142 132 17 16)
+BtnPersLine		 59 1 19 18 Icon(162 132 17 16)
+BtnPersFace		 78 1 19 18 Icon(182 132 17 16)
+BtnPersSimple		104 1 20 18 Icon(251 173 18 16)
+BtnPersFront		124 1 20 18 Icon(273 173 18 16)
+BtnPersImage		151 1 20 18 Icon(295 173 18 16)
+
+BtnTopPoint		 40 1 19 18 Icon(142 132 17 16)
+BtnTopLine		 59 1 19 18 Icon(162 132 17 16)
+BtnTopFace		 78 1 19 18 Icon(182 132 17 16)
+BtnTopSimple		104 1 20 18 Icon(251 173 18 16)
+BtnTopFront		124 1 20 18 Icon(273 173 18 16)
+BtnTopImage		151 1 20 18 Icon(295 173 18 16)
+
+BtnFrontPoint		 40 1 19 18 Icon(142 132 17 16)
+BtnFrontLine		 59 1 19 18 Icon(162 132 17 16)
+BtnFrontFace		 78 1 19 18 Icon(182 132 17 16)
+BtnFrontSimple		104 1 20 18 Icon(251 173 18 16)
+BtnFrontFront		124 1 20 18 Icon(273 173 18 16)
+BtnFrontImage		151 1 20 18 Icon(295 173 18 16)
+
+BtnLeftPoint		 40 1 19 18 Icon(142 132 17 16)
+BtnLeftLine		 59 1 19 18 Icon(162 132 17 16)
+BtnLeftFace		 78 1 19 18 Icon(182 132 17 16)
+BtnLeftSimple		104 1 20 18 Icon(251 173 18 16)
+BtnLeftFront		124 1 20 18 Icon(273 173 18 16)
+BtnLeftImage		151 1 20 18 Icon(295 173 18 16)

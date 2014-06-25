@@ -1,0 +1,21 @@
+-----------------------------------------------------------
+   Metasequoia
+
+       Copyright(c)1998-2008, O.Mizno
+                       All rights reserved.
+
+   Homepage:  http://www.metaseq.net/
+     E-mail:  o-mizno@mba.ocn.ne.jp 
+-----------------------------------------------------------
+
+
+ Metasequoia is a polygon modeler for 3DCG and game development.
+
+ Metasequoia is SHAREWARE. In the unregistered version, you can save only in original format. Output in the various formats are restricted, for example AutoCAD (DXF), LightWave (LWO), 3D Studio (3DS), and so on. You must purchase serial-ID to cancel this restriction. 
+
+You may be able to purchase serial-ID with PayPal. Please send me e-mail if you want to purchase. The subject of e-mail must be 'Purchasing Metasequoia'.
+
+I also release a limited edition as freeware, and you can use it for any purposes.
+
+
+ THE AUTHOR MAKE NO WARRANTY OR REPRESENTATION, EITHER EXPRESS OR IMPLIED, WITH RESPECT TO THIS SOFTWARE, ITS QUALITY, ACCURACY. THIS SOFTWARE IS PROVIDED "AS IS", AND YOU, ITS USER, ASSUME THE ENTIRE RISK AS TO ITS QUALITY AND ACCYRACY. YOU MUST USE AT YOUR OWN RISK.

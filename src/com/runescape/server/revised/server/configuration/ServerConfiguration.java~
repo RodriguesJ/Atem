@@ -1,0 +1,7 @@
+package com.runescape.revised.server.configuration;
+
+public abstract class ServerConfiguration {
+
+	public abstract short getPort();
+	public abstract String getIP();
+}

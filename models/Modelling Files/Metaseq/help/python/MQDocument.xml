@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MQPythonClass.xsl"?>
+<doc>
+ <class>MQDocument</class>
+ <message lang="en">MQDocument contains objects and materials.</message>
+ <message lang="ja">オブジェクトや材質を管理します。</message>
+ <properties>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type>int</type>
+   <name>numObject</name>
+   <message lang="en">number of objects</message>
+   <message lang="ja">オブジェクトの数</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type>int</type>
+   <name>numMaterial</name>
+   <message lang="en">number of materials</message>
+   <message lang="ja">材質の数</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type template="list">MQObject</type>
+   <name>object</name>
+   <message lang="en">list of objects</message>
+   <message lang="ja">オブジェクトのリスト</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>0</set>
+   <type template="list">MQMaterial</type>
+   <name>material</name>
+   <message lang="en">list of material</message>
+   <message lang="ja">材質のリスト</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>currentObjectIndex</name>
+   <message lang="en">index of current object</message>
+   <message lang="ja">カレントオブジェクトのインデックス</message>
+  </property>
+  <property>
+   <get>1</get>
+   <set>1</set>
+   <type>int</type>
+   <name>currentMaterialIndex</name>
+   <message lang="en">index of current material</message>
+   <message lang="ja">カレント材質のインデックス</message>
+  </property>
+ </properties>
+ <methods>
+  <method>
+   <name>getScene</name>
+   <message lang="en">Get a scene in this document.</message>
+   <message lang="ja">ドキュメント内のシーンを取得します。</message>
+   <args>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the scene</message>
+     <message lang="ja">シーンのインデックス</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQScene</type>
+    <message lang="en">scene</message>
+    <message lang="ja">シーン</message>
+   </return>
+  </method>
+  <!--
+  <method>
+   <name>getObject</name>
+   <message lang="en">Get an object in this document.</message>
+   <message lang="ja">ドキュメント内のオブジェクトを取得します。</message>
+   <args>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQObject</type>
+    <message lang="en">object<br />Return 'None' if the object has been already deleted.</message>
+    <message lang="ja">オブジェクト<br />オブジェクトが削除されている場合、Noneが返されます。</message>
+   </return>
+  </method>
+  <method>
+   <name>getObjectCount</name>
+   <message lang="en">Get the number of objects in this document.</message>
+   <message lang="ja">ドキュメント内のオブジェクト数を取得します。</message>
+   <return>
+    <type>int</type>
+    <message lang="en">number of objects</message>
+    <message lang="ja">オブジェクト数</message>
+   </return>
+  </method>
+  -->
+  <method>
+   <name>addObject</name>
+   <message lang="en">Add an object into this document.</message>
+   <message lang="ja">ドキュメントにオブジェクトを追加します。</message>
+   <args>
+    <arg option="0">
+     <name>obj</name>
+     <type>MQObject</type>
+     <message lang="en">object</message>
+     <message lang="ja">オブジェクト</message>
+    </arg>
+    <arg option="1">
+     <name>parent</name>
+     <type>MQObject</type>
+     <message lang="en">parent</message>
+     <message lang="ja">親オブジェクト<br />省略した場合は直下に追加されます。</message>
+    </arg>
+   </args>
+   <return>
+    <type>int</type>
+    <message lang="en">index of object</message>
+    <message lang="ja">登録されたオブジェクトのインデックス</message>
+   </return>
+   <attention lang="en">indices of other objects will be changed when you add a child (not root) object.</attention>
+   <attention lang="ja">parentを指定して階層化されたオブジェクトを追加した場合、他のオブジェクトのインデックスが変更されます。</attention>
+  </method>
+  <method>
+   <name>deleteObject</name>
+   <message lang="en">Delete the object in this document.</message>
+   <message lang="ja">ドキュメント中のオブジェクトを削除します。</message>
+   <args>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+   </args>
+   <attention lang="en">object[index] will return 'None' after deleting the object.</attention>
+   <attention lang="ja">削除後のobject[index]はNoneを返します。</attention>
+  </method>
+  <method>
+   <name>getObjectIndex</name>
+   <message lang="en">Delete the object in this document.</message>
+   <message lang="ja">オブジェクトのインデックスを取得します。</message>
+   <args>
+    <arg>
+     <name>obj</name>
+     <type>MQObject</type>
+     <message lang="en">object</message>
+     <message lang="ja">オブジェクト</message>
+    </arg>
+   </args>
+   <return>
+    <type>int</type>
+    <message lang="en">index of object</message>
+    <message lang="ja">オブジェクトのインデックス</message>
+    <values>
+     <value value="-1">
+      <message lang="en">a object isn't added into the document</message>
+      <message lang="ja">ドキュメントに登録されていないオブジェクト</message>
+     </value>
+    </values>
+   </return>
+  </method>
+  <method>
+   <name>getParentObject</name>
+   <message lang="en">Get a parent object of the specified object. Return 'None' if the specified object exists in the root.</message>
+   <message lang="ja">指定したオブジェクトの親オブジェクトを取得します。</message>
+   <args>
+    <arg>
+     <name>obj</name>
+     <type>MQObject</type>
+     <message lang="en">child object</message>
+     <message lang="ja">子オブジェクト</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQObject</type>
+    <message lang="en">parent object</message>
+    <message lang="ja">親オブジェクト</message>
+    <values>
+     <value value="None">
+      <message lang="en">the object exists under a root.</message>
+      <message lang="ja">オブジェクトがルート直下にある場合</message>
+     </value>
+    </values>
+   </return>
+  </method>
+  <method>
+   <name>getChildObjectCount</name>
+   <message lang="en">Get a number of children objects under the specified object.</message>
+   <message lang="ja">指定したオブジェクトの直下にある子オブジェクトの数を取得します。</message>
+   <args>
+    <arg>
+     <name>obj</name>
+     <type>MQObject</type>
+     <message lang="en">child object</message>
+     <message lang="ja">親オブジェクト</message>
+    </arg>
+   </args>
+   <return>
+    <type>int</type>
+    <message lang="en">number of children objects</message>
+    <message lang="ja">子オブジェクトの数</message>
+   </return>
+  </method>
+  <method>
+   <name>getChildObject</name>
+   <message lang="en">Get a child object under the specified object.</message>
+   <message lang="ja">指定したオブジェクトの直下にある子オブジェクトの数を取得します。</message>
+   <args>
+    <arg>
+     <name>obj</name>
+     <type>MQObject</type>
+     <message lang="en">parent object</message>
+     <message lang="ja">親オブジェクト</message>
+    </arg>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the child object</message>
+     <message lang="ja">子オブジェクトのインデックス</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQObject</type>
+    <message lang="en">children object</message>
+    <message lang="ja">子オブジェクト</message>
+   </return>
+  </method>
+  <method>
+   <name>isAncestorObject</name>
+   <message lang="en">Check if a child object under the specified object.</message>
+   <message lang="ja">ancestorがdescendantの先祖かどうかを調べます。</message>
+   <args>
+    <arg>
+     <name>ancestor</name>
+     <type>MQObject</type>
+     <message lang="en">ancestor object</message>
+     <message lang="ja">先祖オブジェクト</message>
+    </arg>
+    <arg>
+     <name>descendant</name>
+     <type>MQObject</type>
+     <message lang="en">descendant object</message>
+     <message lang="ja">孫オブジェクト</message>
+    </arg>
+   </args>
+   <return>
+    <type>int</type>
+    <message lang="en">result</message>
+    <message lang="ja">関係</message>
+    <values>
+     <value value="0">
+      <message lang="en">not an ancestor and a descedant object</message>
+      <message lang="ja">直系の先祖・子孫関係にならない</message>
+     </value>
+     <value value="1">
+      <message lang="en">an ancestor and a descedant object</message>
+      <message lang="ja">直系の先祖・子孫関係である</message>
+     </value>
+    </values>
+   </return>
+  </method>
+  <method>
+   <name>getGlobalMatrix</name>
+   <message lang="en">Get a global matrix of the specified object.</message>
+   <message lang="ja">指定したオブジェクトのグローバル座標変換行列を取得します。</message>
+   <args>
+    <arg>
+     <name>obj</name>
+     <type>MQObject</type>
+     <message lang="en">parent object</message>
+     <message lang="ja">オブジェクト</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQMatrix</type>
+    <message lang="en">global matrix</message>
+    <message lang="ja">グローバル行列</message>
+   </return>
+  </method>
+  <method>
+   <name>getGlobalInverseMatrix</name>
+   <message lang="en">Get a global inverse matrix of the specified object.</message>
+   <message lang="ja">指定したオブジェクトのグローバル座標変換逆行列を取得します。</message>
+   <args>
+    <arg>
+     <name>obj</name>
+     <type>MQObject</type>
+     <message lang="en">parent object</message>
+     <message lang="ja">オブジェクト</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQMatrix</type>
+    <message lang="en">global matrix</message>
+    <message lang="ja">グローバル逆行列</message>
+   </return>
+  </method>
+  <!--
+  <method>
+   <name>getMaterial</name>
+   <message lang="en">Get a material in this document.</message>
+   <message lang="ja">ドキュメント中のマテリアルを取得します。</message>
+   <args>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the material</message>
+     <message lang="ja">マテリアルのインデックス</message>
+    </arg>
+   </args>
+   <return>
+    <type>MQMaterial</type>
+    <message lang="en">material</message>
+    <message lang="ja">マテリアル</message>
+   </return>
+  </method>
+  <method>
+   <name>getMaterialCount</name>
+   <message lang="en">Get a number of materials in this document.</message>
+   <message lang="ja">ドキュメント中のマテリアルの数を取得します。</message>
+   <return>
+    <type>int</type>
+    <message lang="en">a number of materials</message>
+    <message lang="ja">マテリアルの数</message>
+   </return>
+  </method>
+  -->
+  <method>
+   <name>addMaterial</name>
+   <message lang="en">Add a material into this document.</message>
+   <message lang="ja">ドキュメント中にマテリアルを追加します。</message>
+   <args>
+    <arg>
+     <name>mat</name>
+     <type>MQMaterial</type>
+     <message lang="en">material</message>
+     <message lang="ja">マテリアル</message>
+    </arg>
+   </args>
+   <return>
+    <type>int</type>
+    <message lang="en">index of the material</message>
+    <message lang="ja">登録されたマテリアルのインデックス</message>
+   </return>
+  </method>
+  <method>
+   <name>deleteMaterial</name>
+   <message lang="en">Delete a material in this document.</message>
+   <message lang="ja">ドキュメント中にマテリアルを追加します。</message>
+   <args>
+    <arg>
+     <name>index</name>
+     <type>int</type>
+     <message lang="en">index of the material</message>
+     <message lang="ja">マテリアルのインデックス</message>
+    </arg>
+   </args>
+   <attention lang="en">material[index] will return 'None' after deleting the material.</attention>
+   <attention lang="ja">削除後のmaterial[index]はNoneを返します。</attention>
+  </method>
+  <method>
+   <name>clearSelect</name>
+   <message lang="en">Clear the selection.</message>
+   <message lang="ja">すべての頂点・辺・面の選択状態を解除します。</message>
+  </method>
+<!--
+  <method>
+   <name>addSelectVertex</name>
+   <message lang="en">Add a selection of the vertex.</message>
+   <message lang="ja">指定した頂点を選択します。</message>
+   <args>
+    <arg>
+     <name>obj_index</name>
+     <type>int</type>
+     <message lang="en">index of object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+    <arg>
+     <name>vert_index</name>
+     <type>int</type>
+     <message lang="en">index of vertex</message>
+     <message lang="ja">頂点のインデックス</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>deleteSelectVertex</name>
+   <message lang="en">Delete a selection of the vertex.</message>
+   <message lang="ja">指定した頂点の選択を解除します。</message>
+   <args>
+    <arg>
+     <name>obj_index</name>
+     <type>int</type>
+     <message lang="en">index of object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+    <arg>
+     <name>vert_index</name>
+     <type>int</type>
+     <message lang="en">index of vertex</message>
+     <message lang="ja">頂点のインデックス</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>isSelectVertex</name>
+   <message lang="en">Get a selection of the vertex.</message>
+   <message lang="ja">指定した頂点が選択されているかを調べます。</message>
+   <args>
+    <arg>
+     <name>obj_index</name>
+     <type>int</type>
+     <message lang="en">index of object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+    <arg>
+     <name>vert_index</name>
+     <type>int</type>
+     <message lang="en">index of vertex</message>
+     <message lang="ja">頂点のインデックス</message>
+    </arg>
+   </args>
+   <return>
+    <type>int</type>
+    <message lang="en">selection state</message>
+    <message lang="ja">選択状態</message>
+    <values>
+     <value value="0">
+      <message lang="en">not selected</message>
+      <message lang="ja">選択されていない</message>
+     </value>
+     <value value="1">
+      <message lang="en">selected</message>
+      <message lang="ja">選択されている</message>
+     </value>
+    </values>
+   </return>
+  </method>
+  <method>
+   <name>addSelectLine</name>
+   <message lang="en">Add a selection of the line.</message>
+   <message lang="ja">指定した辺を選択します。</message>
+   <args>
+    <arg>
+     <name>obj_index</name>
+     <type>int</type>
+     <message lang="en">index of object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+    <arg>
+     <name>face_index</name>
+     <type>int</type>
+     <message lang="en">index of face</message>
+     <message lang="ja">面のインデックス</message>
+    </arg>
+    <arg>
+     <name>line_index</name>
+     <type>int</type>
+     <message lang="en">index of line</message>
+     <message lang="ja">辺のインデックス</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>deleteSelectLine</name>
+   <message lang="en">Delete a selection of the line.</message>
+   <message lang="ja">指定した辺の選択を解除します。</message>
+   <args>
+    <arg>
+     <name>obj_index</name>
+     <type>int</type>
+     <message lang="en">index of object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+    <arg>
+     <name>face_index</name>
+     <type>int</type>
+     <message lang="en">index of face</message>
+     <message lang="ja">面のインデックス</message>
+    </arg>
+    <arg>
+     <name>line_index</name>
+     <type>int</type>
+     <message lang="en">index of line</message>
+     <message lang="ja">辺のインデックス</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>isSelectLine</name>
+   <message lang="en">Get a selection of the line.</message>
+   <message lang="ja">指定した辺が選択されているかを調べます。</message>
+   <args>
+    <arg>
+     <name>obj_index</name>
+     <type>int</type>
+     <message lang="en">index of object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+    <arg>
+     <name>face_index</name>
+     <type>int</type>
+     <message lang="en">index of face</message>
+     <message lang="ja">面のインデックス</message>
+    </arg>
+    <arg>
+     <name>line_index</name>
+     <type>int</type>
+     <message lang="en">index of line</message>
+     <message lang="ja">辺のインデックス</message>
+    </arg>
+   </args>
+   <return>
+    <type>int</type>
+    <message lang="en">selection state</message>
+    <message lang="ja">選択状態</message>
+    <values>
+     <value value="0">
+      <message lang="en">not selected</message>
+      <message lang="ja">選択されていない</message>
+     </value>
+     <value value="1">
+      <message lang="en">selected</message>
+      <message lang="ja">選択されている</message>
+     </value>
+    </values>
+   </return>
+  </method>
+  <method>
+   <name>addSelectFace</name>
+   <message lang="en">Add a selection of the face.</message>
+   <message lang="ja">指定した面を選択します。</message>
+   <args>
+    <arg>
+     <name>obj_index</name>
+     <type>int</type>
+     <message lang="en">index of object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+    <arg>
+     <name>face_index</name>
+     <type>int</type>
+     <message lang="en">index of face</message>
+     <message lang="ja">面のインデックス</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>deleteSelectFace</name>
+   <message lang="en">Delete a selection of the face.</message>
+   <message lang="ja">指定した面の選択を解除します。</message>
+   <args>
+    <arg>
+     <name>obj_index</name>
+     <type>int</type>
+     <message lang="en">index of object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+    <arg>
+     <name>face_index</name>
+     <type>int</type>
+     <message lang="en">index of face</message>
+     <message lang="ja">面のインデックス</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>isSelectFace</name>
+   <message lang="en">Get a selection of the face.</message>
+   <message lang="ja">指定した面が選択されているかを調べます。</message>
+   <args>
+    <arg>
+     <name>obj_index</name>
+     <type>int</type>
+     <message lang="en">index of object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+    <arg>
+     <name>face_index</name>
+     <type>int</type>
+     <message lang="en">index of face</message>
+     <message lang="ja">面のインデックス</message>
+    </arg>
+   </args>
+   <return>
+    <type>int</type>
+    <message lang="en">selection state</message>
+    <message lang="ja">選択状態</message>
+    <values>
+     <value value="0">
+      <message lang="en">not selected</message>
+      <message lang="ja">選択されていない</message>
+     </value>
+     <value value="1">
+      <message lang="en">selected</message>
+      <message lang="ja">選択されている</message>
+     </value>
+    </values>
+   </return>
+  </method>
+  <method>
+   <name>addSelectUVVertex</name>
+   <message lang="en">Add a selection of the UV vertex.</message>
+   <message lang="ja">指定したUV頂点を選択します。</message>
+   <args>
+    <arg>
+     <name>obj_index</name>
+     <type>int</type>
+     <message lang="en">index of object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+    <arg>
+     <name>face_index</name>
+     <type>int</type>
+     <message lang="en">index of face</message>
+     <message lang="ja">面のインデックス</message>
+    </arg>
+    <arg>
+     <name>vert_index</name>
+     <type>int</type>
+     <message lang="en">index of vertex</message>
+     <message lang="ja">頂点のインデックス</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>deleteSelectUVVertex</name>
+   <message lang="en">Delete a selection of the UV vertex.</message>
+   <message lang="ja">指定したUV頂点の選択を解除します。</message>
+   <args>
+    <arg>
+     <name>obj_index</name>
+     <type>int</type>
+     <message lang="en">index of object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+    <arg>
+     <name>face_index</name>
+     <type>int</type>
+     <message lang="en">index of face</message>
+     <message lang="ja">面のインデックス</message>
+    </arg>
+    <arg>
+     <name>vert_index</name>
+     <type>int</type>
+     <message lang="en">index of vertex</message>
+     <message lang="ja">頂点のインデックス</message>
+    </arg>
+   </args>
+  </method>
+  <method>
+   <name>isSelectUVVertex</name>
+   <message lang="en">Get a selection of the UV vertex.</message>
+   <message lang="ja">指定したUV頂点が選択されているかを調べます。</message>
+   <args>
+    <arg>
+     <name>obj_index</name>
+     <type>int</type>
+     <message lang="en">index of object</message>
+     <message lang="ja">オブジェクトのインデックス</message>
+    </arg>
+    <arg>
+     <name>face_index</name>
+     <type>int</type>
+     <message lang="en">index of face</message>
+     <message lang="ja">面のインデックス</message>
+    </arg>
+    <arg>
+     <name>vert_index</name>
+     <type>int</type>
+     <message lang="en">index of vertex</message>
+     <message lang="ja">頂点のインデックス</message>
+    </arg>
+   </args>
+   <return>
+    <type>int</type>
+    <message lang="en">selection state</message>
+    <message lang="ja">選択状態</message>
+    <values>
+     <value value="0">
+      <message lang="en">not selected</message>
+      <message lang="ja">選択されていない</message>
+     </value>
+     <value value="1">
+      <message lang="en">selected</message>
+      <message lang="ja">選択されている</message>
+     </value>
+    </values>
+   </return>
+  </method>
+-->
+ </methods>
+</doc>

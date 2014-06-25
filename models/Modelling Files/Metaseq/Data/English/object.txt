@@ -1,0 +1,266 @@
+Clone {
+	DlgObjectClone	"Clone object"
+	OkBtn	"OK"
+	BtnCancel	"Cancel"
+	GroupCount	"Number"
+	GroupPosition	"Position"
+	RadioOffset	"Relative"
+	RadioCenter	"Create at center"
+	RadioMirror	"Create symmetry"
+}
+
+Primitive {
+	DlgPrimitive	"Primitive"
+	PanelFaceBase	"Faces"
+
+	TabFlat	"Flat"
+	LabelFlatX	"X"
+	LabelFlatZ	"Z"
+	LabelFlatSeg	"Segment"
+	LabelFlatSize	"Size"
+
+	TabBox	"Box"
+	LabelBoxX	"X"
+	LabelBoxY	"Y"
+	LabelBoxZ	"Z"
+	LabelBoxSeg	"Segment"
+	LabelBoxSize	"Size"
+	CheckBoxCube "Cube"
+
+	TabSphere	"Sphere"
+	LabelSphereSegX	"U"
+	LabelSphereSegY	"V"
+	LabelSphereRange	"Radius"
+	CheckSphereQuad	"As rectangle"
+
+	TabCylinder	"Cylinder"
+	LabelCylinderSegU	"U"
+	LabelCylinderSegV	"V"
+	LabelCylinderRange	"Radius"
+	LabelCylinderHeight	"Height"
+
+	TabTorus	"Torus"
+	LabelTorusSegU	"U"
+	LabelTorusSegV	"V"
+	LabelTorusRangeIn	"In"
+	LabelTorusRangeOut	"Out"
+
+	TabTube	"Tube"
+	LabelTubeSegU	"U"
+	LabelTubeSegV	"V"
+	LabelTubeRangeIn	"In"
+	LabelTubeRangeOut	"Out"
+	LabelTubeHeight	"Height"
+	
+	TabCone	"Cone"
+	LabelConeSegU	"U"
+	LabelConeSegV	"V"
+	LabelConeRange	"Radius"
+	LabelConeHeight	"Height"
+
+	LabelRCubeX	"X"
+	LabelRCubeY	"Y"
+	LabelRCubeZ	"Z"
+	LabelRCubeR	"Round"
+	LabelRCubeSeg	"Segment"
+	LabelRCubeSize	"Size"
+	CheckRCubeCube	"Cube"
+
+	LabelRCylU	"U"
+	LabelRCylV	"V"
+	LabelRCylRound	"R"
+	LabelRCylSeg	"Segment"
+	LabelRCylSize	"Size"
+
+	CheckMapping	"UV-Mapping"
+	CheckMaterial	"Attach current material"
+	CheckNewObject	"Create as new object"
+	CheckLocal		"Set a base position of the local axis"
+
+}
+
+DropFile {
+	DlgDropFile "Drag and Drop"
+	Label1 "File is dropped"
+	BtnOpen "Open"
+	BtnInsert "Insert"
+	BtnCancel "Cancel"
+}
+
+Overwrite {
+	DlgOverwriteObj "Overwrite Object"
+	LabelObject "%1 already exists."
+	BtnMerge "Merge"
+	BtnNewObject "Create as new object"
+	BtnAllMerge "Merge all"
+	BtnAllNewObject "Create as all new objects"
+}
+
+Move {
+	DlgMove 	"Move"
+	OkBtn		"OK"
+	BtnCancel	"Cancel"
+	RadioType	"Type" "Relative" "Absolute"
+	GroupOption	"Offset"
+	LabelChange	"Apply"
+}
+
+Scale {
+	DlgScale	"Scale"
+	OkBtn		"OK"
+	BtnCancel	"Cancel"
+	BtnApply	"Apply"
+	LabelScale	"Scaling"
+	LabelPos	"Center"
+	BtnInitScale	"Initialize"
+}
+
+Rotate {
+	DlgRotate	"Rotate"
+	OkBtn		"OK"
+	BtnCancel	"Cancel"
+	LabelAngle	"Angle"
+	LabelPos	"Center"
+}
+
+LocalEdit {
+	DlgLocalProperty	"Local axis property"
+	OkBtn		"Apply"
+	BtnCancel	"Cancel"
+	GroupLocal	"Local"
+	LabelLocalPos	"Position"
+	LabelLocalSize	"Scale"
+	LabelLocalAngle	"Angle"
+	LabelLocalHead	"Head"
+	LabelLocalPich	"Pitch"
+	LabelLocalBank	"Bank"
+	GroupGlobal	"Global"
+	LabelGlobalPos	"Position"
+	LabelGlobalSize	"Scale"
+	LabelGlobalAngle	"Angle"
+	LabelGlobalHead	"Head"
+	LabelGlobalPich	"Pitch"
+	LabelGlobalBank	"Bank"
+}
+
+Mapping {
+	DlgMapProperty	"Mapping Property"
+	OkBtn		"Apply"
+	BtnCancel	"Cancel"
+	GroupTransform	"Transform"
+	LabelPosition	"Position"
+	LabelSize	"Size"
+	LabelAngle	"Angle"
+	LabelHead	"Head"
+	LabelPich	"Pich"
+	LabelBank	"Bank"
+	GroupRepeat	"Repeat"
+}
+
+UVConfig {
+	DlgUVConfig	"UVMapping Property"
+	OkBtn		"OK"
+	BtnCancel	"Cancel"
+	GroupParams	"Parameters"
+	LabelUVLength	"Length of guide"
+	LabelGrid	"Grid"
+	LabelRepeat	"Repeat"
+	CheckSnapCenter	"Snap to the center of grid"
+	CheckMoveOnObject	"Move UV on the object"
+	GroupShortcut	"Shortcut"
+}
+
+UVOutput {
+	TDlgOutputUV	"Export UV atlas"
+	OkBtn		"OK"
+	BtnCancel	"Cancel"
+	LabelWidth	"Width"
+	LabelHeight	"Height"
+	LabelFileName	"FileName"
+	BtnLoadTexture	"Set"
+}
+
+Twist {
+	DlgTwist	"Twist Property"
+	OkBtn		"OK"
+	BtnCancel	"Cancel"
+	LabelBegin	"Begin"
+	LabelEnd	"End"
+}
+
+Lattice {
+	DlgLattice	"Lattice Property"
+	OkBtn		"OK"
+	BtnCancel	"Cancel"
+	LabelSize	"Size"
+	LabelPos	"Position"
+	LabelSegment	"Segment"
+	CheckSize	"Proportional"
+	CheckSeg	"Proportional"
+}
+
+VColFilter {
+	DlgVertColFilter	"Vertex Color Filter"
+	OkBtn		"OK"
+	BtnCancel	"Cancel"
+	LabelContrast	"Contrast"
+	LabelBrightness	"Brightness"
+	LabelRed	"Red"
+	LabelGreen	"Green"
+	LabelBlue	"Blue"
+}
+
+VColIlluminate {
+	DlgIlluminate	"Vertex Color Illuminate"
+	OkBtn		"OK"
+	BtnCancel	"Cancel"
+	RadioApply	"Scope" "All objects" "Current object only" "Current material only" "Current object and material"
+	RadioMaterial	"Material" "Constant + Vertex Color" "Current shader + Vertex Color" "No changes"
+}
+
+BlobProperty {
+	DlgBlobProperty	"Property"
+	OkBtn		"OK"
+	BtnCancel	"Cancel"
+	GroupType	"Type"
+	PanelType	"Unknown"
+	GroupPosition	"Transform"
+	LabelPosition	"Position"
+	LabelSize	"Size"
+	LabelHead	"Head"
+	LabelPich	"Pich"
+	LabelBank	"Bank"
+	LabelWeight	"Weight"
+	GroupOption	"Option"
+	LabelDensity	"Density"
+	LabelDensityMes1	"Blob of negative density"
+	LabelDensityMes2	"makes a hole."
+}
+
+BlobPolygonise {
+	DlgBlobPolygonise	"Polygonise Blob"
+	OkBtn		"OK"
+	BtnCancel	"Cancel"
+	GroupOption	""
+	LabelGrid	"Interval of Grid"
+	Label1	"Create precisely as the"
+	Label2	"interval is narrower."
+}
+
+BlobConfig {
+	DlgBlobConfig	"Blob Configration"
+	OkBtn		"OK"
+	BtnCancel	"Cancel"
+	GroupOption	""
+	LabelGrid	"Interval of Grid"
+	Label1	"Show slowly and precisely"
+	Label2	"as the interval is narrower."
+}
+
+MatOverwrite {
+	DlgMatOverwrite "Overwrite Material"
+	BtnOverwrite	"Overwrite"
+	BtnIgnore	"Ignore"
+	BtnOverwriteAll	"Overwrite all"
+	BtnIgnoreAll	"Ignore all"
+}
